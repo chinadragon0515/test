@@ -1,14 +1,12 @@
-#### Issues
-*The issue #xxx is fixed by this pull request.*  
+### Issues
+*This pull request fixes issue #xxx.*  
 
-#### Description
-*Describe the changes of this pull request and include technical details if changes are hard to understand*  
+### Description
+*Briefly describe the changes of this pull request.*
 
-#### Have adequate tests included?
-*Yes/No with some descriptions on the added/modified test cases*  
+### Checklist (Uncheck if it is not completed)
+- [ x ] Test cases added
+- [ x ] Build and test with one-click build and test script passed
 
-#### Has one-click build and test passed?
-*Yes/No*  
-
-#### Does document need to be updated?
-*Yes/No, if yes, list what are documents need to be updated*  
+### Additional work necessary
+*If documentation update is needed, please add "Docs Needed" label to the issue and provide details about the required document change in the issue.*

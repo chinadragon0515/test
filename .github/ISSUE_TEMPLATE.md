@@ -1,17 +1,16 @@
-#### Description
-*Does the bug result in any actual functional issue, if so, what?*  
+*Short summary (3-5 sentences) describing the issue.*  
 
-#### Libraries and version
-*What are the Libraries used. What are version of the libraries been used.*  
+### Assemblies affected
+*Which assemblies and versions are known to be affected e.g. RESTier 0.4.0-rc2.*  
 
-#### Minimal repro steps
-*What is the smallest, simplest set of steps to reproduce the issue. If needed, provide a project that demonstrates the issue.*  
+### Reproduce steps
+*The simplest set of steps to reproduce the issue. If possible, reference a commit that demonstrates the issue.*  
 
-#### Expected result
-*What would you expect to happen if there wasn't a bug*  
+### Expected result
+*What would happen if there wasn't a bug.*  
 
-#### Actual result
-*What is actually happening*  
+### Actual result
+*What is actually happening.*  
 
-#### Further technical details
-*Optional, details of the root cause if known*
+### Additional details
+*Optional, details of the root cause if known. Delete this section if you have no additional details to add.*
