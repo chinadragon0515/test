@@ -1,64 +1,2375 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Test by chinadragon0515</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Test</h1>
-        <p></p>
+  <title>RESTier</title>
+  <meta name="description" content="Documentation - tutorials, guides - for RESTier.
+">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <p class="view"><a href="https://github.com/chinadragon0515/test">View the Project on GitHub <small>chinadragon0515/test</small></a></p>
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="/RESTier/css/main.css">
+  <link rel="canonical" href="http://yourdomain.com/RESTier/">
+  <link rel="alternate" type="application/rss+xml" title="RESTier" href="http://yourdomain.com/RESTier/feed.xml" />
+</head>
 
 
-        <ul>
-          <li><a href="https://github.com/chinadragon0515/test/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/chinadragon0515/test/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/chinadragon0515/test">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+  <body data-spy="scroll" data-target="#nav-sidebar">
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+    <header class="site-header">
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+  <div class="container">
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+    <a class="site-title" href="/RESTier/">RESTier</a>
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+  </div>
 
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+</header>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/chinadragon0515">chinadragon0515</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+    <div class="page-content">
+      <div class="container">
+        <style type="text/css">
+.affix-top{
+  position:fixed;
+  top:80px;
+  left: 75%;
+}
+.affix{
+  position:fixed;
+  top:-100px;
+  left: 75%;
+}
+.post-title{
+  margin-bottom: 30px;
+  border-bottom: 1px;
+  border-bottom-color: #e8e8e8;
+  border-bottom-style: solid;
+}
+.post-content{
+  margin-bottom: 60px;
+}
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 0px 5px;
+}
+ul.nav{
+  margin-left: 5px;
+}
+</style>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  // Nav bar
+  $("#nav-sidebar>ul>li>div").hide();
+  $(window).scroll(function(){
+      $("#nav-sidebar>ul>li>div").hide();
+      $("#nav-sidebar>ul>li.active>div").show();
+    });
+  $("#nav-sidebar>ul>li").click(function(){
+      $("#nav-sidebar>ul>li").removeClass('active');
+      $(this).addClass('active');
+      $("#nav-sidebar>ul>li>div").hide();
+      $(this).children('div').show();
+  });
+  // Window width change
+  $( window ).resize(function() {
+      if ($(window).width() < 975) {
+        $('#nav-sidebar').hide();
+      }
+      else{
+        $('#nav-sidebar').show(); 
+      }
+  });
+});</script>
+
+<div class="home">
+
+  <div class="row">
+    <div id="nav-sidebar" class="col-md-3" data-spy="affix" data-offset-top="20000">
+      <ul class="nav nav-pills nav-stacked">
+        
+        
+        <li class="panel panel-default">
+          <a class="panel-heading">
+            <small>1. GETTING STARTED</small>
+          </a>
+          <div class="panel-body">
+            <ul class="nav nav-pills nav-stacked">
+              
+              
+              
+              
+              
+              
+              
+              <li class="nav-item">
+                <a href="#01-01-Introduction"><small>1.1 Introduction</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#01-02-Bootstrap"><small>1.2 Bootstrap an OData service [>=0.4.0]</small></a>
+              </li>
+              
+              
+              
+            </ul>
+          </div>
+        </li>
+        
+        <li class="panel panel-default">
+          <a class="panel-heading">
+            <small>2. FEATURES</small>
+          </a>
+          <div class="panel-body">
+            <ul class="nav nav-pills nav-stacked">
+              
+              
+              
+              
+              
+              
+              
+              <li class="nav-item">
+                <a href="#02-01-Role-Based-Security"><small>2.1 Role Based Security</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#02-02-Submit-Logic"><small>2.2 Submit Logic [>=0.4.0]</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#02-03-entity-set-filters-new"><small>2.3 Entity Set Filters [>=0.4.0]</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#02-04-Model-building"><small>2.4 Model Building [0.4.0 only]</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#02-05-Model-building-0-5-0"><small>2.5 Model Building [>=0.5.0]</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#02-06-Composite-Key"><small>2.6 Composite Key [>=0.5.0]</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#02-07-Key-As-Segment"><small>2.7 Key As Segment [>=0.5.0]</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#02-08-Customize-Payload-Converter"><small>2.8 Customize Payload Converter [>=0.5.0]</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#02-09-Customize-Query-Setting"><small>2.9 Customize Query Setting [>=0.5.0]</small></a>
+              </li>
+              
+              
+              
+            </ul>
+          </div>
+        </li>
+        
+        <li class="panel panel-default">
+          <a class="panel-heading">
+            <small>3. EXTENSIONS</small>
+          </a>
+          <div class="panel-body">
+            <ul class="nav nav-pills nav-stacked">
+              
+              
+              
+              
+              
+              
+              
+              <li class="nav-item">
+                <a href="#03-01-Temporal"><small>3.1 Use temporal types in RESTier Entity Framework [>=0.5.0]</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#03-02-Controllers"><small>3.2 Use Controllers in RESTier [>=0.4.0]</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#03-03-InMemory"><small>3.3 In-Memory Provider [0.4.0 only]</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#03-04-InMemory-0-5-0"><small>3.4 In-Memory Provider [>=0.5.0]</small></a>
+              </li>
+              
+              
+              
+            </ul>
+          </div>
+        </li>
+        
+        <li class="panel panel-default">
+          <a class="panel-heading">
+            <small>4. DEEP IN RESTIER</small>
+          </a>
+          <div class="panel-body">
+            <ul class="nav nav-pills nav-stacked">
+              
+              
+              
+              
+              
+              
+              
+              <li class="nav-item">
+                <a href="#04-01-Infrastructure"><small>4.1 RESTier infrastructure</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#04-02-Hook-Handler"><small>4.2 RESTier Hook Handler (0.4.0 only)</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#04-03-Api-Service"><small>4.3 RESTier API Service (>=0.5.0)</small></a>
+              </li>
+              
+              
+              
+            </ul>
+          </div>
+        </li>
+        
+        <li class="panel panel-default">
+          <a class="panel-heading">
+            <small>5. CLIENTS</small>
+          </a>
+          <div class="panel-body">
+            <ul class="nav nav-pills nav-stacked">
+              
+              
+              
+              
+              
+              
+              
+              <li class="nav-item">
+                <a href="#05-01-Client"><small>5.1 Clients</small></a>
+              </li>
+              
+              
+              
+            </ul>
+          </div>
+        </li>
+        
+        <li class="panel panel-default">
+          <a class="panel-heading">
+            <small>6. ANNOUNCEMENTS</small>
+          </a>
+          <div class="panel-body">
+            <ul class="nav nav-pills nav-stacked">
+              
+              
+              
+              
+              
+              
+              
+              <li class="nav-item">
+                <a href="#06-01-Preview-Announcement"><small>6.1 Release notes for RESTier 0.2.0-preview</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#06-02-RESTier-open-sourced"><small>6.2 RESTier now open sourced on GitHub</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#06-03-0-3-0-beta-1"><small>6.3 Release notes for RESTier 0.3.0-beta1</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#06-04-0-3-0-beta-2"><small>6.4 Release notes for RESTier 0.3.0-beta2</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#06-05-0-4-0-rc"><small>6.5 Release notes for RESTier 0.4.0-rc</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#06-06-0-4-0-rc2"><small>6.6 Release notes for RESTier 0.4.0-rc2</small></a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                <a href="#06-07-0-5-0-beta"><small>6.7 Release notes for RESTier 0.5.0-beta</small></a>
+              </li>
+              
+              
+              
+            </ul>
+          </div>
+        </li>
+        
+        <li class="panel panel-default">
+          <a class="panel-heading">
+            <small>7. TOOLING</small>
+          </a>
+          <div class="panel-body">
+            <ul class="nav nav-pills nav-stacked">
+              
+              
+              
+              
+              
+              
+              
+              <li class="nav-item">
+                <a href="#07-01-Restier-Scaffolding"><small>7.1 Restier Scaffolding</small></a>
+              </li>
+              
+              
+              
+            </ul>
+          </div>
+        </li>
+        
+      </ul>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+
+    <div class="col-md-9">
+      
+      <div class="alert alert-success" role="alert">
+        For a unified experience, please go to the <a href="https://github.com/odata/RESTier/issues" target="_blank">GitHub Issues</a> to ask question, report bugs, and ask for features.
+      </div>
+      
+      
+      
+      <h1 class="post-title" id="1-Getting-Started">1. GETTING STARTED</h1>
+      <ul class="post-list">
+        
+        
+        
+        
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="01-01-Introduction">1.1 Introduction</h2>
+          <article class="post-content">
+            <p>OData stands for the Open Data Protocol. It was initiated by Microsoft and is now an ISO and OASIS standard. OData enables the creation and consumption of RESTful APIs, which allow resources, defined in a data model and identified by using URLs, to be published and edited by Web clients using simple HTTP requests.</p>
+
+<p>RESTier is a RESTful API development framework for building standardized, OData V4 based RESTful services on .NET platform. It can be seen as a middle-ware on top of <a href="http://odata.github.io/WebApi/"><strong>Web API OData</strong></a>. RESTier provides facilities to bootstrap an OData service like what WCF Data Services (which is sunset) does, beside this, it supports to add business logic in several simple steps, has flexibily and easy customization like what Web API OData do. It also supports to add additional publishers to support other protocols and additional providers to support other data sources.</p>
+
+<p>For more information about OData, please refer to the following resources:</p>
+
+<p><a href="http://www.odata.org/">OData.org</a></p>
+
+<p><a href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=odata">OASIS Open Data Protocol (OData) Technical Committee</a></p>
+
+<p>For more information about OData .Net Library, refer to <strong><a href="http://odata.github.io/odata.net/">OData .Net Library document</a></strong>.</p>
+
+<p>For more information about Web API OData Library, refer to <strong><a href="http://odata.github.io/WebApi/">Web API OData Library document</a></strong>.</p>
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="01-02-Bootstrap">1.2 Bootstrap an OData service [>=0.4.0]</h2>
+          <article class="post-content">
+            <p>After RESTier 0.4.0, creating an OData service has never been easier! This subsection shows how to create an OData V4 endpoint using RESTier in a few minutes. <a href="http://msftdbprodsamples.codeplex.com/downloads/get/354847">AdventureWorksLT</a> will be used as the sample database and <a href="http://msdn.microsoft.com/en-us/data/ef.aspx">Entity Framework</a> as the data proxy.</p>
+
+<h3 id="create-a-project-and-a-web-app">Create a project and a web app</h3>
+<p>1.Open Visual Studio 2015 or Visual Studio 2013. If you use Visual Studio 2013, the screens will be slightly different from the screenshots, but the procedures are essentially the same.</p>
+
+<p>2.From the <strong>File</strong> menu, click <strong>New &gt; Project</strong>.</p>
+
+<p>3.In the <strong>New Project</strong> dialog box, click <strong>C# &gt; Web &gt; ASP.NET Web Application</strong>.</p>
+
+<p>4.Clear the <strong>Add Application Insights to Project</strong> check box.</p>
+
+<p>5.Name the application <strong>HelloWorld</strong>.</p>
+
+<p>6.Click <strong>OK</strong>.</p>
+
+<p><img src="/RESTier/images/solution.PNG" alt="" /></p>
+
+<p>7.In the <strong>New ASP.NET Project</strong> dialog box, select the <strong>Empty</strong> template.</p>
+
+<p>8.Select the <strong>Web API</strong> check box.</p>
+
+<p>9.Clear the <strong>Host in the cloud</strong> check box.</p>
+
+<p><img src="/RESTier/images/project.PNG" alt="" /></p>
+
+<h3 id="install-the-restier-packages">Install the RESTier packages</h3>
+
+<p>1.In the <strong>Solution Explorer</strong> window, right click the project <strong>HelloWorld</strong> and select <strong>Manage NuGet Packages…</strong>.</p>
+
+<p>2.In the <strong>NuGet Package Manager</strong> window, select the <strong>Include prerelease</strong> checkbox.</p>
+
+<p>3.Type <strong>Restier</strong> in the <strong>Search Box</strong> beside and press <strong>Enter</strong>.</p>
+
+<p>4.Select <strong>Microsoft.Restier</strong> and click the <strong>Install</strong> button.</p>
+
+<p><img src="/RESTier/images/nuget.PNG" alt="" /></p>
+
+<p>5.In the <strong>Preview</strong> dialog box, click the <strong>OK</strong> button.</p>
+
+<p><img src="/RESTier/images/preview.PNG" alt="" /></p>
+
+<p>6.In the <strong>License Acceptance</strong> dialog box, click the <strong>I Accept</strong> button.</p>
+
+<p><img src="/RESTier/images/license.PNG" alt="" /></p>
+
+<h3 id="generate-the-model-classes">Generate the model classes</h3>
+
+<p>1.Download <a href="http://msftdbprodsamples.codeplex.com/downloads/get/354847">AdventureWorksLT2012_Data.mdf</a> and <a href="https://msdn.microsoft.com/en-us/library/8b6y4c7s.aspx">import</a> it into the <code class="highlighter-rouge">(localdb)\MSSQLLocalDB</code> database.</p>
+
+<p>2.In the <strong>Solution Explorer</strong> window, right click the <strong>Models</strong> folder under the project <strong>HelloWorld</strong> and select <strong>Add &gt; New Item</strong>.</p>
+
+<p>3.In the <strong>Add New Item - HelloWorld</strong> dialog box, click <strong>C# &gt; Data &gt; ADO.NET Entity Data Model</strong>.</p>
+
+<p>4.Name the model <strong>AdventureWorksLT</strong>.</p>
+
+<p>5.Click the <strong>Add</strong> button.</p>
+
+<p><img src="/RESTier/images/model.PNG" alt="" /></p>
+
+<p>6.In the <strong>Entity Data Model Wizard</strong> window, select the item <strong>Code First from database</strong>.</p>
+
+<p>7.Click the <strong>Next</strong> button.</p>
+
+<p><img src="/RESTier/images/codefirst1.PNG" alt="" /></p>
+
+<p>8.Click the <strong>New Connection</strong> button.</p>
+
+<p><img src="/RESTier/images/codefirst2.PNG" alt="" /></p>
+
+<p>9.In the <strong>Connection Properties</strong> dialog box, type <strong>(localdb)\MSSQLLocalDB</strong> for <strong>Server name</strong>.</p>
+
+<p>10.Select <strong>AdventureWorksLT2012</strong> for <strong>database name</strong>.</p>
+
+<p><img src="/RESTier/images/codefirst3.PNG" alt="" /></p>
+
+<p>11.After returning to the <strong>Entity Data Model Wizard</strong> window, click the <strong>Next</strong> button.</p>
+
+<p><img src="/RESTier/images/codefirst4.PNG" alt="" /></p>
+
+<p>12.Select the <strong>Tables</strong> check box and click the <strong>Finish</strong> button.</p>
+
+<p><img src="/RESTier/images/codefirst5.PNG" alt="" /></p>
+
+<h3 id="configure-the-odata-endpoint">Configure the OData Endpoint</h3>
+<p>In the <strong>Solution Explorer</strong> window, click <strong>HelloWorld &gt; App_Start &gt; WebApiConfig.cs</strong>. Replace the <code class="highlighter-rouge">WebApiConfig</code> class the following code.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System.Web.Http</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">HelloWorld.Models</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.EntityFramework</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Batch</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">HelloWorld</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">class</span> <span class="nc">WebApiConfig</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="n">async</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Register</span><span class="p">(</span><span class="n">HttpConfiguration</span> <span class="n">config</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">await</span> <span class="n">config</span><span class="p">.</span><span class="n">MapRestierRoute</span><span class="p">&lt;</span><span class="n">DbApi</span><span class="p">&lt;</span><span class="n">AdventureWorksLT</span><span class="p">&gt;&gt;(</span>
+                <span class="s">"AdventureWorksLT"</span><span class="p">,</span>
+                <span class="s">"api/AdventureWorksLT"</span><span class="p">,</span>
+                <span class="k">new</span> <span class="nf">RestierBatchHandler</span><span class="p">(</span><span class="n">GlobalConfiguration</span><span class="p">.</span><span class="n">DefaultServer</span><span class="p">));</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>After these steps, you will have finished bootstrapping an OData service endpoint. You can then <em>Run</em> the project and an OData service is started. Then you can start by accessing the URL <code class="highlighter-rouge">http://localhost:&lt;ISS Express port&gt;/api/AdventureWorksLT</code> to view all available entity sets, and try with other basic OData CRUD operations. For instance, you may try querying any of the entity sets using the <code class="highlighter-rouge">$select</code>, <code class="highlighter-rouge">$filter</code>, <code class="highlighter-rouge">$orderby</code>, <code class="highlighter-rouge">$top</code> or <code class="highlighter-rouge">$skip</code> query string parameters.</p>
+
+          </article>
+        </li>
+        
+        
+        
+      </ul>
+      
+      <h1 class="post-title" id="2-Features">2. FEATURES</h1>
+      <ul class="post-list">
+        
+        
+        
+        
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="02-01-Role-Based-Security">2.1 Role Based Security</h2>
+          <article class="post-content">
+            <p>Currently the quality of the role-based security module is <strong>NOT</strong> guaranteed and this module will <strong>NOT</strong> be shipped with regular RESTier releases. Please use it at your own risk.</p>
+
+<p>For example code, please refer to <a href="https://github.com/OData/RESTier/blob/master/src/Microsoft.Restier.Samples.Northwind/Models/NorthwindApi.cs#L14-L24">NorthwindApi</a>.</p>
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="02-02-Submit-Logic">2.2 Submit Logic [>=0.4.0]</h2>
+          <article class="post-content">
+            <p>Submit logic convention allows users to authorize a submit operation or plug in user logic (such as logging) before and after a submit operation. Usually a submit operation can be inserting an entity, deleting an entity, updating an entity or executing an OData action.</p>
+
+<h3 id="authorization">Authorization</h3>
+<p>Users can control if one of the four submit operations is allowed on some entity set or action by putting some <strong>protected</strong> methods into the <code class="highlighter-rouge">Api</code> class. The method signatures must exactly match the following examples. The method name must conform to <code class="highlighter-rouge">Can&lt;Insert|Update|Delete|Execute&gt;&lt;EntitySetName|ActionName&gt;</code>.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core.Model</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.EntityFramework</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Models</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Api</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinApi</span> <span class="p">:</span> <span class="n">DbApi</span><span class="p">&lt;</span><span class="n">TrippinModel</span><span class="p">&gt;</span>
+    <span class="p">{</span>
+        <span class="p">...</span>
+        <span class="c1">// Can delete an entity from the entity set Trips?
+</span>        <span class="k">protected</span> <span class="kt">bool</span> <span class="nf">CanDeleteTrips</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+        <span class="p">}</span>
+        
+        <span class="c1">// Can execute an action named ResetDataSource?
+</span>        <span class="k">protected</span> <span class="kt">bool</span> <span class="nf">CanExecuteResetDataSource</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="plug-in-user-logic">Plug in user logic</h3>
+<p>Users can plug in user logic before and after executing one of the four submit operations by putting similar <strong>protected</strong> methods into the <code class="highlighter-rouge">Api</code> class. The method signatures must also exactly match the following examples. The method name must conform to <code class="highlighter-rouge">On&lt;Insert|Updat|Delet|Execut&gt;&lt;ed|ing&gt;&lt;EntitySetName|ActionName&gt;</code> where <code class="highlighter-rouge">ing</code> for <strong>before submit</strong> and <code class="highlighter-rouge">ed</code> for <strong>after submit</strong>.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core.Model</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.EntityFramework</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.Samples.Northwind.Models</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">NorthwindApi</span> <span class="p">:</span> <span class="n">DbApi</span><span class="p">&lt;</span><span class="n">NorthwindContext</span><span class="p">&gt;</span>
+    <span class="p">{</span>
+        <span class="p">...</span>
+        <span class="c1">// Gets called before updating an entity from the entity set Products.
+</span>        <span class="k">protected</span> <span class="k">void</span> <span class="nf">OnUpdatingProducts</span><span class="p">(</span><span class="n">Product</span> <span class="n">product</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="nf">WriteLog</span><span class="p">(</span><span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">.</span><span class="nf">ToString</span><span class="p">()</span> <span class="p">+</span> <span class="n">product</span><span class="p">.</span><span class="n">ProductID</span> <span class="p">+</span> <span class="s">" is being updated"</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="c1">// Gets called after inserting an entity to the entity set Products.
+</span>        <span class="k">protected</span> <span class="k">void</span> <span class="nf">OnInsertedProducts</span><span class="p">(</span><span class="n">Product</span> <span class="n">product</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="nf">WriteLog</span><span class="p">(</span><span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">.</span><span class="nf">ToString</span><span class="p">()</span> <span class="p">+</span> <span class="n">product</span><span class="p">.</span><span class="n">ProductID</span> <span class="p">+</span> <span class="s">" has been inserted"</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="02-03-entity-set-filters-new">2.3 Entity Set Filters [>=0.4.0]</h2>
+          <article class="post-content">
+            <p>Entity set filter convention helps plug in a piece of filtering logic for entity set. It is done via adding an <code class="highlighter-rouge">OnFilter[entity set name](IQueryable&lt;T&gt; entityset)</code> method to the <code class="highlighter-rouge">Api</code> class.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>1. The filter method name must be OnFilter[entity set name], ending with the target entity set name.
+2. It must be a **protected** method on the `Api` class.
+3. It should accept an IQueryable&lt;T&gt; parameter and return an IQueryable&lt;T&gt; result where T is the entity type. 
+</code></pre>
+</div>
+
+<p>Supposed that ~/AdventureWorksLT/Products can get all the Product entities, the below OnFilterProducts method will filter some Product entities by checking the ProductID.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">Microsoft.Restier.Core</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.EntityFramework</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Data.Entity</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading.Tasks</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">AdventureWorksLTSample.Models</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">AdventureWorksApi</span> <span class="p">:</span> <span class="n">DbApi</span><span class="p">&lt;</span><span class="n">AdventureWorksContext</span><span class="p">&gt;</span>
+    <span class="p">{</span>
+        <span class="k">protected</span> <span class="n">IQueryable</span><span class="p">&lt;</span><span class="n">Product</span><span class="p">&gt;</span> <span class="nf">OnFilterProducts</span><span class="p">(</span><span class="n">IQueryable</span><span class="p">&lt;</span><span class="n">Product</span><span class="p">&gt;</span> <span class="n">entitySet</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="n">entitySet</span><span class="p">.</span><span class="nf">Where</span><span class="p">(</span><span class="n">s</span> <span class="p">=&gt;</span> <span class="n">s</span><span class="p">.</span><span class="n">ProductID</span> <span class="p">%</span> <span class="m">3</span> <span class="p">==</span> <span class="m">0</span><span class="p">).</span><span class="nf">AsQueryable</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Now some testings will show that:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>1. ~/AdventureWorksLT/Products will only get the Product entities whose ProductID is  3,6,9,12,15,... 
+2. ~/AdventureWorksLT/Products([product id]) will only be able to get a Product entity whose ProductID mod 3 results a zero. 
+</code></pre>
+</div>
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="02-04-Model-building">2.4 Model Building [0.4.0 only]</h2>
+          <article class="post-content">
+            <p>This section is for version 0.4.0 only, for newer version,refer to following section.
+RESTier supports various ways to build EDM model. Users may first get an initial model from the EF provider. Then RESTier’s <code class="highlighter-rouge">ConventionBasedApiModelBuilder</code> can further extend the model with additional entity sets, singletons and operations from the public properties and methods defined in the <code class="highlighter-rouge">Api</code> class. This subsection mainly talks about how to build an initial EDM model and then the convention RESTier adopts to extend an EDM model from an <code class="highlighter-rouge">Api</code> class.</p>
+
+<h3 id="build-an-initial-edm-model">Build an initial EDM model</h3>
+<p>The <code class="highlighter-rouge">ConventionBasedApiModelBuilder</code> requires EDM types to be present in the initial model because it is only responsible for building entity sets, singletons and operations <strong>NOT types</strong>. So anyway users need to build an initial EDM model with adequate types added in advance. The typical way to do so is to write a custom model builder implementing <code class="highlighter-rouge">IModelBuilder</code> and register it to the <code class="highlighter-rouge">Api</code> class. Here is an example using the <code class="highlighter-rouge">ConventionModelBuilder</code> in OData Web API to build an initial model only containing the <code class="highlighter-rouge">Person</code> type.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.ObjectModel</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading.Tasks</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Web.OData.Builder</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.OData.Edm</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core.Model</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.TrippinInMemory</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinApi</span> <span class="p">:</span> <span class="n">ApiBase</span>
+    <span class="p">{</span>
+        <span class="k">protected</span> <span class="k">override</span> <span class="n">ApiConfiguration</span> <span class="nf">CreateApiConfiguration</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="k">base</span><span class="p">.</span><span class="nf">CreateApiConfiguration</span><span class="p">()</span>
+                <span class="p">.</span><span class="n">AddHookHandler</span><span class="p">&lt;</span><span class="n">IModelBuilder</span><span class="p">&gt;(</span><span class="k">new</span> <span class="nf">ModelBuilder</span><span class="p">());</span>
+        <span class="p">}</span>
+
+        <span class="k">private</span> <span class="k">class</span> <span class="nc">ModelBuilder</span> <span class="p">:</span> <span class="n">IModelBuilder</span>
+        <span class="p">{</span>
+            <span class="k">public</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IEdmModel</span><span class="p">&gt;</span> <span class="nf">GetModelAsync</span><span class="p">(</span><span class="n">InvocationContext</span> <span class="n">context</span><span class="p">,</span> <span class="n">CancellationToken</span> <span class="n">cancellationToken</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">var</span> <span class="n">builder</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">ODataConventionModelBuilder</span><span class="p">();</span>
+                <span class="n">builder</span><span class="p">.</span><span class="n">EntityType</span><span class="p">&lt;</span><span class="n">Person</span><span class="p">&gt;();</span>
+                <span class="k">return</span> <span class="n">Task</span><span class="p">.</span><span class="nf">FromResult</span><span class="p">(</span><span class="n">builder</span><span class="p">.</span><span class="nf">GetEdmModel</span><span class="p">());</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>If RESTier entity framework provider is used and user has no additional types other than those in the database schema, no custom model builder or even the <code class="highlighter-rouge">Api</code> class is required because the provider will take over to build the model instead. But what the provider does behind the scene is similar.</p>
+
+<h3 id="extend-a-model-from-api-class">Extend a model from Api class</h3>
+<p>The <code class="highlighter-rouge">ConventionBasedApiModelBuilder</code> will further extend the EDM model passed in using the public properties and methods defined in the <code class="highlighter-rouge">Api</code> class. Please note that all properties and methods declared in the parent classes are <strong>NOT</strong> considered.</p>
+
+<p><strong>Entity set</strong>
+If a property declared in the <code class="highlighter-rouge">Api</code> class satisfies the following conditions, an entity set whose name is the property name will be added into the model.</p>
+
+<ul>
+  <li>Public</li>
+  <li>Has getter</li>
+  <li>Either static or instance</li>
+  <li>There is no existing entity set with the same name</li>
+  <li>Return type must be <code class="highlighter-rouge">IQueryable&lt;T&gt;</code> where <code class="highlighter-rouge">T</code> is class type</li>
+</ul>
+
+<p>Example:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core.Model</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.EntityFramework</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Models</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Api</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinApi</span> <span class="p">:</span> <span class="n">DbApi</span><span class="p">&lt;</span><span class="n">TrippinModel</span><span class="p">&gt;</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="n">IQueryable</span><span class="p">&lt;</span><span class="n">Person</span><span class="p">&gt;</span> <span class="n">PeopleWithFriends</span>
+        <span class="p">{</span>
+            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">Context</span><span class="p">.</span><span class="n">People</span><span class="p">.</span><span class="nf">Include</span><span class="p">(</span><span class="s">"Friends"</span><span class="p">);</span> <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="p">...</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><br /></p>
+
+<p><strong>Singleton</strong>
+If a property declared in the <code class="highlighter-rouge">Api</code> class satisfies the following conditions, a singleton whose name is the property name will be added into the model.</p>
+
+<ul>
+  <li>Public</li>
+  <li>Has getter</li>
+  <li>Either static or instance</li>
+  <li>There is no existing singleton with the same name</li>
+  <li>Return type must be non-generic class type</li>
+</ul>
+
+<p>Example:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core.Model</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.EntityFramework</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Models</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Api</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinApi</span> <span class="p">:</span> <span class="n">DbApi</span><span class="p">&lt;</span><span class="n">TrippinModel</span><span class="p">&gt;</span>
+    <span class="p">{</span>
+        <span class="p">...</span>
+        <span class="k">public</span> <span class="n">Person</span> <span class="n">Me</span> <span class="p">{</span> <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">DbContext</span><span class="p">.</span><span class="n">People</span><span class="p">.</span><span class="nf">Find</span><span class="p">(</span><span class="m">1</span><span class="p">);</span> <span class="p">}</span> <span class="p">}</span>
+        <span class="p">...</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>For versions under 0.4.0-beta, users must define an action with <code class="highlighter-rouge">ODataRouteAttribute</code> in their custom controller to access a singleton. <strong>After version 0.4.0-rc, no custom route is required.</strong> However due to some limitations from Entity Framework and OData spec, CUD (insertion, update and deletion) on the singleton entity are <strong>NOT</strong> supported directly by RESTier. Users need to define their own route to achieve these operations.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Net</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Web.Http</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Web.OData</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Web.OData.Extensions</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Web.OData.Routing</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.OData.Edm.Library</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Api</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Models</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Controllers</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinController</span> <span class="p">:</span> <span class="n">ODataController</span>
+    <span class="p">{</span>
+        <span class="p">...</span>
+        <span class="c1">// Only needed &lt;=0.4.0-beta
+</span>        <span class="p">[</span><span class="n">EnableQuery</span><span class="p">]</span>
+        <span class="p">[</span><span class="n">HttpGet</span><span class="p">]</span>
+        <span class="p">[</span><span class="nf">ODataRoute</span><span class="p">(</span><span class="s">"Me"</span><span class="p">)]</span>
+        <span class="k">public</span> <span class="n">IHttpActionResult</span> <span class="nf">Me</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="nf">Ok</span><span class="p">(</span><span class="n">DbContext</span><span class="p">.</span><span class="n">People</span><span class="p">.</span><span class="nf">Find</span><span class="p">(</span><span class="m">1</span><span class="p">));</span>
+        <span class="p">}</span>
+        <span class="p">...</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><br /></p>
+
+<p><strong>Navigation property binding</strong>
+Starting from version 0.4.0-rc, the <code class="highlighter-rouge">ConventionBasedApiModelBuilder</code> follows the rules below to add navigation property bindings after entity sets and singletons have been built.</p>
+
+<ul>
+  <li>Bindings will <strong>ONLY</strong> be added for those entity sets and singletons that have been built inside <code class="highlighter-rouge">ConventionBasedApiModelBuilder</code>.
+<strong>Example:</strong> Entity sets built by the RESTier’s EF provider are assumed to have their navigation property bindings added already.</li>
+  <li>The <code class="highlighter-rouge">ConventionBasedApiModelBuilder</code> only searches navigation sources who have the same entity type as the source navigation property.
+<strong>Example:</strong> If the type of a navigation property is <code class="highlighter-rouge">Person</code> or <code class="highlighter-rouge">Collection(Person)</code>, only those entity sets and singletons of type <code class="highlighter-rouge">Person</code> are searched.</li>
+  <li>Singleton navigation properties can be bound to either entity sets or singletons. 
+<strong>Example:</strong> If <code class="highlighter-rouge">Person.BestFriend</code> is a singleton navigation property, bindings from <code class="highlighter-rouge">BestFriend</code> to an entity set <code class="highlighter-rouge">People</code> or to a singleton <code class="highlighter-rouge">Boss</code> are all allowed.</li>
+  <li>Collection navigation properties can <strong>ONLY</strong> be bound to entity sets.
+<strong>Example:</strong> If <code class="highlighter-rouge">Person.Friends</code> is a collection navigation property. <strong>ONLY</strong> binding from <code class="highlighter-rouge">Friends</code> to an entity set <code class="highlighter-rouge">People</code> is allowed. Binding from <code class="highlighter-rouge">Friends</code> to a singleton <code class="highlighter-rouge">Boss</code> is <strong>NOT</strong> allowed.</li>
+  <li>If there is any ambiguity among entity sets or singletons, no binding will be added.
+<strong>Example:</strong> For the singleton navigation property <code class="highlighter-rouge">Person.BestFriend</code>, no binding will be added if 1) there are at least two entity sets (or singletons) both of type <code class="highlighter-rouge">Person</code>; 2) there is at least one entity set and one singleton both of type <code class="highlighter-rouge">Person</code>. However for the collection navigation property <code class="highlighter-rouge">Person.Friends</code>, no binding will be added only if there are at least two entity sets both of type <code class="highlighter-rouge">Person</code>. One entity set and one singleton both of type <code class="highlighter-rouge">Person</code> will <strong>NOT</strong> lead to any ambiguity and one binding to the entity set will be added.</li>
+</ul>
+
+<p>If any expected navigation property binding is not added by RESTier, users can always manually add it through custom model extension (mentioned below).
+<br /></p>
+
+<p><strong>Operation</strong>
+If a method declared in the <code class="highlighter-rouge">Api</code> class satisfies the following conditions, an operation whose name is the method name will be added into the model.</p>
+
+<ul>
+  <li>Public</li>
+  <li>Either static or instance</li>
+  <li>There is no existing operation with the same name</li>
+</ul>
+
+<p>Example (namespace should be specified if the namespace of the method does not match the model):</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core.Model</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.EntityFramework</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Models</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Api</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinApi</span> <span class="p">:</span> <span class="n">DbApi</span><span class="p">&lt;</span><span class="n">TrippinModel</span><span class="p">&gt;</span>
+    <span class="p">{</span>
+        <span class="p">...</span>
+        <span class="c1">// Action import
+</span>        <span class="p">[</span><span class="nf">Action</span><span class="p">(</span><span class="n">Namespace</span> <span class="p">=</span> <span class="s">"Microsoft.Restier.WebApi.Test.Services.Trippin.Models"</span><span class="p">)]</span>
+        <span class="k">public</span> <span class="k">void</span> <span class="nf">CleanUpExpiredTrips</span><span class="p">()</span> <span class="p">{}</span>
+        
+        <span class="c1">// Bound action
+</span>        <span class="p">[</span><span class="nf">Action</span><span class="p">(</span><span class="n">Namespace</span> <span class="p">=</span> <span class="s">"Microsoft.Restier.WebApi.Test.Services.Trippin.Models"</span><span class="p">)]</span>
+        <span class="k">public</span> <span class="n">Trip</span> <span class="nf">EndTrip</span><span class="p">(</span><span class="n">Trip</span> <span class="n">bindingParameter</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+        
+        <span class="c1">// Function import
+</span>        <span class="p">[</span><span class="nf">Function</span><span class="p">(</span><span class="n">Namespace</span> <span class="p">=</span> <span class="s">"Microsoft.Restier.WebApi.Test.Services.Trippin.Models"</span><span class="p">)]</span>
+        <span class="k">public</span> <span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">Person</span><span class="p">&gt;</span> <span class="nf">GetPeopleWithFriendsAtLeast</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+        
+        <span class="c1">// Bound function
+</span>        <span class="p">[</span><span class="nf">Function</span><span class="p">(</span><span class="n">Namespace</span> <span class="p">=</span> <span class="s">"Microsoft.Restier.WebApi.Test.Services.Trippin.Models"</span><span class="p">)]</span>
+        <span class="k">public</span> <span class="n">Person</span> <span class="nf">GetPersonWithMostFriends</span><span class="p">(</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">Person</span><span class="p">&gt;</span> <span class="n">bindingParameter</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+        <span class="p">...</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Please note that in order to access an operation user must define an action with <code class="highlighter-rouge">ODataRouteAttribute</code> in his custom controller.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Net</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Web.Http</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Web.OData</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Web.OData.Extensions</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Web.OData.Routing</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.OData.Edm.Library</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Api</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Models</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Controllers</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinController</span> <span class="p">:</span> <span class="n">ODataController</span>
+    <span class="p">{</span>
+        <span class="k">private</span> <span class="n">TrippinApi</span> <span class="n">api</span><span class="p">;</span>
+        
+        <span class="k">private</span> <span class="n">TrippinApi</span> <span class="n">Api</span>
+        <span class="p">{</span>
+            <span class="k">get</span>
+            <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">api</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span>
+                <span class="p">{</span>
+                    <span class="n">api</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">TrippinApi</span><span class="p">();</span>
+                <span class="p">}</span>
+                
+                <span class="k">return</span> <span class="n">api</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="p">...</span>
+        <span class="p">[</span><span class="nf">ODataRoute</span><span class="p">(</span><span class="s">"Trips({key})/Microsoft.Restier.WebApi.Test.Services.Trippin.Models.EndTrip"</span><span class="p">)]</span>
+        <span class="k">public</span> <span class="n">IHttpActionResult</span> <span class="nf">EndTrip</span><span class="p">(</span><span class="kt">int</span> <span class="n">key</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">var</span> <span class="n">trip</span> <span class="p">=</span> <span class="n">DbContext</span><span class="p">.</span><span class="n">Trips</span><span class="p">.</span><span class="nf">SingleOrDefault</span><span class="p">(</span><span class="n">t</span> <span class="p">=&gt;</span> <span class="n">t</span><span class="p">.</span><span class="n">TripId</span> <span class="p">==</span> <span class="n">key</span><span class="p">);</span>
+            <span class="k">return</span> <span class="nf">Ok</span><span class="p">(</span><span class="n">Api</span><span class="p">.</span><span class="nf">EndTrip</span><span class="p">(</span><span class="n">trip</span><span class="p">));</span>
+        <span class="p">}</span>
+        <span class="p">...</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="custom-model-extension">Custom model extension</h3>
+<p>If users have the need to extend the model even after RESTier’s conventions have been applied, <code class="highlighter-rouge">ApiConfiguratorAttribute</code> can be used. First implement a custom <code class="highlighter-rouge">ApiConfiguratorAttribute</code> and register a model extender in it. The difference from the previous <code class="highlighter-rouge">TrippinApi.ModelBuilder</code> is that the previous one does <strong>NOT</strong> need to implement <code class="highlighter-rouge">IDelegateHookHandler&lt;IModelBuilder&gt;</code> which provides it with the capability to call an inner model builder. The previous one itself is responsible for producing an initial model. However <code class="highlighter-rouge">TrippinAttribute.TrippinModelExtender</code> <strong>MUST</strong> implement this interface and call the inner model builder to at least get a workable model to extend. Notably the built-in <code class="highlighter-rouge">ConventionBasedApiModelBuilder</code> and <code class="highlighter-rouge">ConventionBasedOperationProvider</code> also follow this pattern.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading.Tasks</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.OData.Edm</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core.Model</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.EntityFramework</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Models</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Api</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinAttribute</span> <span class="p">:</span> <span class="n">ApiConfiguratorAttribute</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="k">override</span> <span class="k">void</span> <span class="nf">Configure</span><span class="p">(</span><span class="n">ApiConfiguration</span> <span class="n">configuration</span><span class="p">,</span> <span class="n">Type</span> <span class="n">type</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="c1">// Add your custom model extender here.
+</span>            <span class="n">configuration</span><span class="p">.</span><span class="n">AddHookHandler</span><span class="p">&lt;</span><span class="n">IModelBuilder</span><span class="p">&gt;(</span><span class="k">new</span> <span class="nf">TrippinModelExtender</span><span class="p">());</span>
+        <span class="p">}</span>
+
+        <span class="k">private</span> <span class="k">class</span> <span class="nc">TrippinModelExtender</span> <span class="p">:</span> <span class="n">IModelBuilder</span><span class="p">,</span> <span class="n">IDelegateHookHandler</span><span class="p">&lt;</span><span class="n">IModelBuilder</span><span class="p">&gt;</span>
+        <span class="p">{</span>
+            <span class="k">public</span> <span class="n">IModelBuilder</span> <span class="n">InnerHandler</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+            <span class="k">public</span> <span class="n">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IEdmModel</span><span class="p">&gt;</span> <span class="nf">GetModelAsync</span><span class="p">(</span><span class="n">InvocationContext</span> <span class="n">context</span><span class="p">,</span> <span class="n">CancellationToken</span> <span class="n">cancellationToken</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">IEdmModel</span> <span class="n">model</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+                
+                <span class="c1">// Call inner model builder to get a model to extend.
+</span>                <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">InnerHandler</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+                <span class="p">{</span>
+                    <span class="n">model</span> <span class="p">=</span> <span class="n">await</span> <span class="k">this</span><span class="p">.</span><span class="n">InnerHandler</span><span class="p">.</span><span class="nf">GetModelAsync</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">cancellationToken</span><span class="p">);</span>
+                <span class="p">}</span>
+
+                <span class="c1">// Do sth to extend the model such as add custom navigation property binding.
+</span>
+                <span class="k">return</span> <span class="n">model</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Then apply it to the <code class="highlighter-rouge">Api</code> class.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core.Model</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.EntityFramework</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Models</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Api</span>
+<span class="p">{</span>
+    <span class="p">[</span><span class="n">Trippin</span><span class="p">]</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinApi</span> <span class="p">:</span> <span class="n">ApiBase</span>
+    <span class="p">{</span>
+        <span class="p">...</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>After the above steps, the final process of building the model will be:</p>
+
+<ul>
+  <li>User’s model builder or RESTier provider’s model builder registered in <code class="highlighter-rouge">CreateApiConfiguration</code>: produce an initial model
+<strong>In this case:</strong> <code class="highlighter-rouge">TrippinApi.ModelBuilder</code> or <code class="highlighter-rouge">Microsoft.Restier.EntityFramework.Model.ModelProducer</code>.</li>
+  <li><code class="highlighter-rouge">ConventionBasedApiModelBuilder</code>: extend the model with entity sets and singletons from <code class="highlighter-rouge">Api</code> class</li>
+  <li><code class="highlighter-rouge">ConventionBasedOperationProvider</code>: extend the model with actions and functions from <code class="highlighter-rouge">Api</code> class</li>
+  <li>User’s model extender registered in custom <code class="highlighter-rouge">ApiConfiguratorAttribute</code>: custom model extension
+<strong>In this case:</strong> <code class="highlighter-rouge">TrippinAttribute.TrippinModelExtender</code>.
+ <br /></li>
+</ul>
+
+<p>Actually this order not only applies to the <code class="highlighter-rouge">IModelBuilder</code> but also all other hook handlers. The typical order for executing a hook handler will be:</p>
+
+<ul>
+  <li>Hook handlers registered in <code class="highlighter-rouge">CreateApiConfiguration</code>: provide an initial result</li>
+  <li>Hook handlers provided by RESTier conventions: apply RESTier conventions to the result</li>
+  <li>Hook handlers registered in custom <code class="highlighter-rouge">ApiConfiguratorAttribute</code>: user customizations</li>
+</ul>
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="02-05-Model-building-0-5-0">2.5 Model Building [>=0.5.0]</h2>
+          <article class="post-content">
+            <p>RESTier supports various ways to build EDM model. Users may first get an initial model from the EF provider. Then RESTier’s <code class="highlighter-rouge">RestierModelExtender</code> can further extend the model with additional entity sets, singletons and operations from the public properties and methods defined in the <code class="highlighter-rouge">Api</code> class. This subsection mainly talks about how to build an initial EDM model and then the convention RESTier adopts to extend an EDM model from an <code class="highlighter-rouge">Api</code> class.</p>
+
+<h3 id="build-an-initial-edm-model">Build an initial EDM model</h3>
+<p>The <code class="highlighter-rouge">RestierModelExtender</code> requires EDM types to be present in the initial model because it is only responsible for building entity sets, singletons and operations <strong>NOT types</strong>. So anyway users need to build an initial EDM model with adequate types added in advance. The typical way to do so is to write a custom model builder implementing <code class="highlighter-rouge">IModelBuilder</code> and register it to the <code class="highlighter-rouge">Api</code> class. Here is an example using the <code class="highlighter-rouge">ODataConventionModelBuilder</code> in OData Web API to build an initial model only containing the <code class="highlighter-rouge">Person</code> type.
+Any model building methods supported by Web API OData can be used here, refer to <strong><a href="http://odata.github.io/WebApi/#02-01-model-builder-abstract">Web API OData Model builder </a></strong>document for more information.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.ObjectModel</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading.Tasks</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Web.OData.Builder</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Extensions.DependencyInjection</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.OData.Edm</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core.Model</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.TrippinInMemory</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinApi</span> <span class="p">:</span> <span class="n">ApiBase</span>
+    <span class="p">{</span>
+        <span class="k">protected</span> <span class="k">override</span> <span class="n">IServiceCollection</span> <span class="nf">ConfigureApi</span><span class="p">(</span><span class="n">IServiceCollection</span> <span class="n">services</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">services</span><span class="p">.</span><span class="n">ChainPrevious</span><span class="p">&lt;</span><span class="n">IModelBuilder</span><span class="p">,</span> <span class="n">CustomizedModelBuilder</span><span class="p">&gt;();</span>
+            <span class="k">return</span> <span class="k">base</span><span class="p">.</span><span class="nf">ConfigureApi</span><span class="p">(</span><span class="n">services</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">private</span> <span class="k">class</span> <span class="nc">CustomizedModelBuilder</span> <span class="p">:</span> <span class="n">IModelBuilder</span>
+        <span class="p">{</span>
+            <span class="k">public</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IEdmModel</span><span class="p">&gt;</span> <span class="nf">GetModelAsync</span><span class="p">(</span><span class="n">InvocationContext</span> <span class="n">context</span><span class="p">,</span> <span class="n">CancellationToken</span> <span class="n">cancellationToken</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">var</span> <span class="n">builder</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">ODataConventionModelBuilder</span><span class="p">();</span>
+                <span class="n">builder</span><span class="p">.</span><span class="n">EntityType</span><span class="p">&lt;</span><span class="n">Person</span><span class="p">&gt;();</span>
+                <span class="k">return</span> <span class="n">Task</span><span class="p">.</span><span class="nf">FromResult</span><span class="p">(</span><span class="n">builder</span><span class="p">.</span><span class="nf">GetEdmModel</span><span class="p">());</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>If RESTier entity framework provider is used and user has no additional types other than those in the database schema, no custom model builder or even the <code class="highlighter-rouge">Api</code> class is required because the provider will take over to build the model instead. But what the provider does behind the scene is similar.</p>
+
+<h3 id="extend-a-model-from-api-class">Extend a model from Api class</h3>
+<p>The <code class="highlighter-rouge">RestierModelExtender</code> will further extend the EDM model passed in using the public properties and methods defined in the <code class="highlighter-rouge">Api</code> class. Please note that all properties and methods declared in the parent classes are <strong>NOT</strong> considered.</p>
+
+<p><strong>Entity set</strong>
+If a property declared in the <code class="highlighter-rouge">Api</code> class satisfies the following conditions, an entity set whose name is the property name will be added into the model.</p>
+
+<ul>
+  <li>Public</li>
+  <li>Has getter</li>
+  <li>Either static or instance</li>
+  <li>There is no existing entity set with the same name</li>
+  <li>Return type must be <code class="highlighter-rouge">IQueryable&lt;T&gt;</code> where <code class="highlighter-rouge">T</code> is class type</li>
+</ul>
+
+<p>Example:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core.Model</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.EntityFramework</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Models</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Api</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinApi</span> <span class="p">:</span> <span class="n">DbApi</span><span class="p">&lt;</span><span class="n">TrippinModel</span><span class="p">&gt;</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="n">IQueryable</span><span class="p">&lt;</span><span class="n">Person</span><span class="p">&gt;</span> <span class="n">PeopleWithFriends</span>
+        <span class="p">{</span>
+            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">Context</span><span class="p">.</span><span class="n">People</span><span class="p">.</span><span class="nf">Include</span><span class="p">(</span><span class="s">"Friends"</span><span class="p">);</span> <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="p">...</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><br /></p>
+
+<p><strong>Singleton</strong>
+If a property declared in the <code class="highlighter-rouge">Api</code> class satisfies the following conditions, a singleton whose name is the property name will be added into the model.</p>
+
+<ul>
+  <li>Public</li>
+  <li>Has getter</li>
+  <li>Either static or instance</li>
+  <li>There is no existing singleton with the same name</li>
+  <li>Return type must be non-generic class type</li>
+</ul>
+
+<p>Example:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core.Model</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.EntityFramework</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Models</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Api</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinApi</span> <span class="p">:</span> <span class="n">DbApi</span><span class="p">&lt;</span><span class="n">TrippinModel</span><span class="p">&gt;</span>
+    <span class="p">{</span>
+        <span class="p">...</span>
+        <span class="k">public</span> <span class="n">Person</span> <span class="n">Me</span> <span class="p">{</span> <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">DbContext</span><span class="p">.</span><span class="n">People</span><span class="p">.</span><span class="nf">Find</span><span class="p">(</span><span class="m">1</span><span class="p">);</span> <span class="p">}</span> <span class="p">}</span>
+        <span class="p">...</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Due to some limitations from Entity Framework and OData spec, CUD (insertion, update and deletion) on the singleton entity are <strong>NOT</strong> supported directly by RESTier. Users need to define their own route to achieve these operations.</p>
+
+<p><strong>Navigation property binding</strong>
+Starting from version 0.5.0, the <code class="highlighter-rouge">RestierModelExtender</code> follows the rules below to add navigation property bindings after entity sets and singletons have been built.</p>
+
+<ul>
+  <li>Bindings will <strong>ONLY</strong> be added for those entity sets and singletons that have been built inside <code class="highlighter-rouge">RestierModelExtender</code>.
+<strong>Example:</strong> Entity sets built by the RESTier’s EF provider are assumed to have their navigation property bindings added already.</li>
+  <li>The <code class="highlighter-rouge">RestierModelExtender</code> only searches navigation sources who have the same entity type as the source navigation property.
+<strong>Example:</strong> If the type of a navigation property is <code class="highlighter-rouge">Person</code> or <code class="highlighter-rouge">Collection(Person)</code>, only those entity sets and singletons of type <code class="highlighter-rouge">Person</code> are searched.</li>
+  <li>Singleton navigation properties can be bound to either entity sets or singletons. 
+<strong>Example:</strong> If <code class="highlighter-rouge">Person.BestFriend</code> is a singleton navigation property, bindings from <code class="highlighter-rouge">BestFriend</code> to an entity set <code class="highlighter-rouge">People</code> or to a singleton <code class="highlighter-rouge">Boss</code> are all allowed.</li>
+  <li>Collection navigation properties can <strong>ONLY</strong> be bound to entity sets.
+<strong>Example:</strong> If <code class="highlighter-rouge">Person.Friends</code> is a collection navigation property. <strong>ONLY</strong> binding from <code class="highlighter-rouge">Friends</code> to an entity set <code class="highlighter-rouge">People</code> is allowed. Binding from <code class="highlighter-rouge">Friends</code> to a singleton <code class="highlighter-rouge">Boss</code> is <strong>NOT</strong> allowed.</li>
+  <li>If there is any ambiguity among entity sets or singletons, no binding will be added.
+<strong>Example:</strong> For the singleton navigation property <code class="highlighter-rouge">Person.BestFriend</code>, no binding will be added if 1) there are at least two entity sets (or singletons) both of type <code class="highlighter-rouge">Person</code>; 2) there is at least one entity set and one singleton both of type <code class="highlighter-rouge">Person</code>. However for the collection navigation property <code class="highlighter-rouge">Person.Friends</code>, no binding will be added only if there are at least two entity sets both of type <code class="highlighter-rouge">Person</code>. One entity set and one singleton both of type <code class="highlighter-rouge">Person</code> will <strong>NOT</strong> lead to any ambiguity and one binding to the entity set will be added.</li>
+</ul>
+
+<p>If any expected navigation property binding is not added by RESTier, users can always manually add it through custom model extension (mentioned below).
+<br /></p>
+
+<p><strong>Operation</strong>
+If a method declared in the <code class="highlighter-rouge">Api</code> class satisfies the following conditions, an operation whose name is the method name will be added into the model.</p>
+
+<ul>
+  <li>Public</li>
+  <li>Either static or instance</li>
+  <li>There is no existing operation with the same name</li>
+</ul>
+
+<p>Example (namespace should be specified if the namespace of the method does not match the model):</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core.Model</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.EntityFramework</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Models</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Api</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinApi</span> <span class="p">:</span> <span class="n">DbApi</span><span class="p">&lt;</span><span class="n">TrippinModel</span><span class="p">&gt;</span>
+    <span class="p">{</span>
+        <span class="p">...</span>
+        <span class="c1">// Action import
+</span>        <span class="p">[</span><span class="nf">Action</span><span class="p">(</span><span class="n">Namespace</span> <span class="p">=</span> <span class="s">"Microsoft.Restier.WebApi.Test.Services.Trippin.Models"</span><span class="p">)]</span>
+        <span class="k">public</span> <span class="k">void</span> <span class="nf">CleanUpExpiredTrips</span><span class="p">()</span> <span class="p">{}</span>
+        
+        <span class="c1">// Bound action
+</span>        <span class="p">[</span><span class="nf">Action</span><span class="p">(</span><span class="n">Namespace</span> <span class="p">=</span> <span class="s">"Microsoft.Restier.WebApi.Test.Services.Trippin.Models"</span><span class="p">)]</span>
+        <span class="k">public</span> <span class="n">Trip</span> <span class="nf">EndTrip</span><span class="p">(</span><span class="n">Trip</span> <span class="n">bindingParameter</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+        
+        <span class="c1">// Function import
+</span>        <span class="p">[</span><span class="nf">Function</span><span class="p">(</span><span class="n">Namespace</span> <span class="p">=</span> <span class="s">"Microsoft.Restier.WebApi.Test.Services.Trippin.Models"</span><span class="p">)]</span>
+        <span class="k">public</span> <span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">Person</span><span class="p">&gt;</span> <span class="nf">GetPeopleWithFriendsAtLeast</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+        
+        <span class="c1">// Bound function
+</span>        <span class="p">[</span><span class="nf">Function</span><span class="p">(</span><span class="n">Namespace</span> <span class="p">=</span> <span class="s">"Microsoft.Restier.WebApi.Test.Services.Trippin.Models"</span><span class="p">)]</span>
+        <span class="k">public</span> <span class="n">Person</span> <span class="nf">GetPersonWithMostFriends</span><span class="p">(</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">Person</span><span class="p">&gt;</span> <span class="n">bindingParameter</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+        <span class="p">...</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Please note that in order to access an operation user must define an action with <code class="highlighter-rouge">ODataRouteAttribute</code> in his custom controller.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Net</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Web.Http</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Web.OData</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Web.OData.Extensions</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Web.OData.Routing</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.OData.Edm.Library</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Api</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Models</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Controllers</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinController</span> <span class="p">:</span> <span class="n">ODataController</span>
+    <span class="p">{</span>
+        <span class="k">private</span> <span class="n">TrippinApi</span> <span class="n">api</span><span class="p">;</span>
+        
+        <span class="k">private</span> <span class="n">TrippinApi</span> <span class="n">Api</span>
+        <span class="p">{</span>
+            <span class="k">get</span>
+            <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">api</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span>
+                <span class="p">{</span>
+                    <span class="n">api</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">TrippinApi</span><span class="p">();</span>
+                <span class="p">}</span>
+                
+                <span class="k">return</span> <span class="n">api</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="p">...</span>
+        <span class="p">[</span><span class="nf">ODataRoute</span><span class="p">(</span><span class="s">"Trips({key})/Microsoft.Restier.WebApi.Test.Services.Trippin.Models.EndTrip"</span><span class="p">)]</span>
+        <span class="k">public</span> <span class="n">IHttpActionResult</span> <span class="nf">EndTrip</span><span class="p">(</span><span class="kt">int</span> <span class="n">key</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">var</span> <span class="n">trip</span> <span class="p">=</span> <span class="n">DbContext</span><span class="p">.</span><span class="n">Trips</span><span class="p">.</span><span class="nf">SingleOrDefault</span><span class="p">(</span><span class="n">t</span> <span class="p">=&gt;</span> <span class="n">t</span><span class="p">.</span><span class="n">TripId</span> <span class="p">==</span> <span class="n">key</span><span class="p">);</span>
+            <span class="k">return</span> <span class="nf">Ok</span><span class="p">(</span><span class="n">Api</span><span class="p">.</span><span class="nf">EndTrip</span><span class="p">(</span><span class="n">trip</span><span class="p">));</span>
+        <span class="p">}</span>
+        <span class="p">...</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="custom-model-extension">Custom model extension</h3>
+<p>If users have the need to extend the model even after RESTier’s conventions have been applied, user can use IServiceCollection ChainPrevious a ModelBuilder after calling base.ConfigureApi(services).</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading.Tasks</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.OData.Edm</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core.Model</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.EntityFramework</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Models</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.Trippin.Api</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinAttribute</span> <span class="p">:</span> <span class="n">ApiConfiguratorAttribute</span>
+    <span class="p">{</span>
+        <span class="k">protected</span> <span class="k">override</span> <span class="n">IServiceCollection</span> <span class="nf">ConfigureApi</span><span class="p">(</span><span class="n">IServiceCollection</span> <span class="n">services</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">services</span> <span class="p">=</span> <span class="k">base</span><span class="p">.</span><span class="nf">ConfigureApi</span><span class="p">(</span><span class="n">services</span><span class="p">);</span>
+            <span class="c1">// Add your custom model extender here.
+</span>            <span class="n">services</span><span class="p">.</span><span class="n">ChainPrevious</span><span class="p">&lt;</span><span class="n">IModelBuilder</span><span class="p">,</span> <span class="n">CustomizedModelBuilder</span><span class="p">&gt;();</span>
+            <span class="k">return</span> <span class="n">services</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">private</span> <span class="k">class</span> <span class="nc">CustomizedModelBuilder</span> <span class="p">:</span> <span class="n">IModelBuilder</span>
+        <span class="p">{</span>
+            <span class="k">public</span> <span class="n">IModelBuilder</span> <span class="n">InnerHandler</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+            <span class="k">public</span> <span class="n">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IEdmModel</span><span class="p">&gt;</span> <span class="nf">GetModelAsync</span><span class="p">(</span><span class="n">InvocationContext</span> <span class="n">context</span><span class="p">,</span> <span class="n">CancellationToken</span> <span class="n">cancellationToken</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">IEdmModel</span> <span class="n">model</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+                
+                <span class="c1">// Call inner model builder to get a model to extend.
+</span>                <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">InnerHandler</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+                <span class="p">{</span>
+                    <span class="n">model</span> <span class="p">=</span> <span class="n">await</span> <span class="k">this</span><span class="p">.</span><span class="n">InnerHandler</span><span class="p">.</span><span class="nf">GetModelAsync</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">cancellationToken</span><span class="p">);</span>
+                <span class="p">}</span>
+
+                <span class="c1">// Do sth to extend the model such as add custom navigation property binding.
+</span>
+                <span class="k">return</span> <span class="n">model</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>After the above steps, the final process of building the model will be:</p>
+
+<ul>
+  <li>User’s model builder registered before base.ConfigureApi(services) is called first.</li>
+  <li>RESTier’s model builder includes EF model builder and RestierModelExtender will be called.</li>
+  <li>User’s model builder registered after base.ConfigureApi(services) is called.
+ <br /></li>
+</ul>
+
+<p>Actually this order not only applies to the <code class="highlighter-rouge">IModelBuilder</code> but also all other services.</p>
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="02-06-Composite-Key">2.6 Composite Key [>=0.5.0]</h2>
+          <article class="post-content">
+            <p>Composite key means one entity has more then one attributes for the key. It is automatically supported by RESTIer without any additional configurations.</p>
+
+<p>To request an entity with composite key, the URL will be like
+<code class="highlighter-rouge">~/EntitySet(keyName1=value1,keyName2=value2)</code></p>
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="02-07-Key-As-Segment">2.7 Key As Segment [>=0.5.0]</h2>
+          <article class="post-content">
+            <p>RESTier supports key as segment with one single line configuration before calling MapRestierRoute method:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="n">config</span><span class="p">.</span><span class="nf">SetUrlConventions</span><span class="p">(</span><span class="n">ODataUrlConventions</span><span class="p">.</span><span class="n">ODataSimplified</span><span class="p">);</span></code></pre></figure>
+
+<p>Then request an entity with key as segment, the URL will be like
+<code class="highlighter-rouge">~/EntitySet/KeyValue</code></p>
+
+<p>Note : If entity type has composite key, then key as segment is not supported for this entity type.</p>
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="02-08-Customize-Payload-Converter">2.8 Customize Payload Converter [>=0.5.0]</h2>
+          <article class="post-content">
+            <p>RESTier supports to customize the payload to be read or written (a.k.a serialize and deserialize), user can extands the class RestierPayloadValueConverter to overwrite method ConvertToPayloadValue for payload writing and ConvertFromPayloadValue for payload reading.</p>
+
+<p>This is an example on how to customize a specified string value to add some prefix and write into response, refer to this <a href="https://github.com/OData/RESTier/blob/master/test/ODataEndToEndTests/Microsoft.Restier.WebApi.Test.Services.Trippin/Models/CustomizedPayloadValueConverter.cs"><strong>link</strong></a> to see the end to end samples,</p>
+
+<p><strong>1.</strong> Create a class to have the customized converter logic</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp">    <span class="k">public</span> <span class="k">class</span> <span class="nc">CustomizedPayloadValueConverter</span> <span class="p">:</span> <span class="n">RestierPayloadValueConverter</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="k">override</span> <span class="kt">object</span> <span class="nf">ConvertToPayloadValue</span><span class="p">(</span><span class="kt">object</span> <span class="k">value</span><span class="p">,</span> <span class="n">IEdmTypeReference</span> <span class="n">edmTypeReference</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">edmTypeReference</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="k">value</span> <span class="k">is</span> <span class="kt">string</span><span class="p">)</span>
+                <span class="p">{</span>
+                    <span class="n">var</span> <span class="n">stringValue</span> <span class="p">=</span> <span class="p">(</span><span class="kt">string</span><span class="p">)</span> <span class="k">value</span><span class="p">;</span>
+
+                    <span class="c1">// Make a single string value "Russell" converted to have additional suffix
+</span>                    <span class="k">if</span> <span class="p">(</span><span class="n">stringValue</span> <span class="p">==</span> <span class="s">"Russell"</span><span class="p">)</span>
+                    <span class="p">{</span>
+                        <span class="k">return</span> <span class="n">stringValue</span> <span class="p">+</span> <span class="s">"Converter"</span><span class="p">;</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="k">return</span> <span class="k">base</span><span class="p">.</span><span class="nf">ConvertToPayloadValue</span><span class="p">(</span><span class="k">value</span><span class="p">,</span> <span class="n">edmTypeReference</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span></code></pre></figure>
+
+<p><strong>2.</strong> Register customized converter into RESTier Depenedncy Injection framework as a service via overriding the ConfigureApi method in your Api class.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp">        <span class="k">protected</span> <span class="k">override</span> <span class="n">IServiceCollection</span> <span class="nf">ConfigureApi</span><span class="p">(</span><span class="n">IServiceCollection</span> <span class="n">services</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="k">base</span><span class="p">.</span><span class="nf">ConfigureApi</span><span class="p">(</span><span class="n">services</span><span class="p">)</span>
+                <span class="p">.</span><span class="n">AddSingleton</span><span class="p">&lt;</span><span class="n">ODataPayloadValueConverter</span><span class="p">,</span> <span class="n">CustomizedPayloadValueConverter</span><span class="p">&gt;();</span>
+        <span class="p">}</span></code></pre></figure>
+
+<p>Then when writting payload for response, any string which has value “Russell” will become “RussellConverter”.</p>
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="02-09-Customize-Query-Setting">2.9 Customize Query Setting [>=0.5.0]</h2>
+          <article class="post-content">
+            <p>RESTier supports to customize kinds of query setting like AllowedLogicalOperators, AllowedQueryOptions, MaxExpansionDepth, MaxAnyAllExpressionDepth and so on. Refer to <a href="https://github.com/OData/WebApi/blob/master/OData/src/System.Web.OData/OData/Query/ODataValidationSettings.cs">class</a> for full list of settings.</p>
+
+<p>This is an example on how to customize MaxExpansionDepth from default value 2 to 3 which means allowing two level nested expand now, refer to this <a href="https://github.com/OData/RESTier/blob/master/test/ODataEndToEndTests/Microsoft.Restier.WebApi.Test.Services.Trippin/Api/TrippinApi.cs"><strong>link</strong></a> to see the end to end samples,</p>
+
+<p>First create a factory delegate which will create a new instance of ODataValidationSettings, then registering it into RESTier Depenedncy Injection framework as a service via overriding the ConfigureApi method in your Api class.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp">        <span class="k">protected</span> <span class="k">override</span> <span class="n">IServiceCollection</span> <span class="nf">ConfigureApi</span><span class="p">(</span><span class="n">IServiceCollection</span> <span class="n">services</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="c1">// Add OData Query Settings and valiadtion settings
+</span>            <span class="n">Func</span><span class="p">&lt;</span><span class="n">IServiceProvider</span><span class="p">,</span> <span class="n">ODataValidationSettings</span><span class="p">&gt;</span> <span class="n">validationSettingFactory</span> <span class="p">=</span> <span class="p">(</span><span class="n">sp</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="k">new</span> <span class="n">ODataValidationSettings</span>
+            <span class="p">{</span>
+                <span class="n">MaxAnyAllExpressionDepth</span> <span class="p">=</span><span class="m">3</span><span class="p">,</span>
+                <span class="n">MaxExpansionDepth</span> <span class="p">=</span> <span class="m">3</span>
+            <span class="p">};</span>
+
+            <span class="k">return</span> <span class="k">base</span><span class="p">.</span><span class="nf">ConfigureApi</span><span class="p">(</span><span class="n">services</span><span class="p">)</span>
+                <span class="p">.</span><span class="n">AddSingleton</span><span class="p">&lt;</span><span class="n">ODataValidationSettings</span><span class="p">&gt;(</span><span class="n">validationSettingFactory</span><span class="p">);</span>
+        <span class="p">}</span></code></pre></figure>
+
+<p>Then $expand with supported with max two nested $expand via only max one nested $expand is supported by default before we apply this customization.</p>
+
+          </article>
+        </li>
+        
+        
+        
+      </ul>
+      
+      <h1 class="post-title" id="3-Extensions">3. EXTENSIONS</h1>
+      <ul class="post-list">
+        
+        
+        
+        
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="03-01-Temporal">3.1 Use temporal types in RESTier Entity Framework [>=0.5.0]</h2>
+          <article class="post-content">
+            <p>Restier.EF now supports various temporal types. Compared to the previous support, the current solution is more consistent and extensible. You can find the detailed type-mapping table among <em>EF type</em>, <em>SQL type</em> and <em>EDM type</em> from the comment in <a href="https://github.com/OData/RESTier/pull/279">Issue #279</a>. Now almost all the OData scenarios (CRUD) of these temporal types should be well supported by RESTier.</p>
+
+<p>This subsection shows how to use temporal types in Restier.EF.</p>
+
+<h3 id="add-edmdatetimeoffset-property">Add Edm.DateTimeOffset property</h3>
+<p>Suppose you have an entity class <code class="highlighter-rouge">Person</code>, all the following code define <code class="highlighter-rouge">Edm.DateTimeOffset</code> properties in the EDM model though the underlying SQL types are different (see the value of the <code class="highlighter-rouge">TypeName</code> property). You can see Column attribute is optional here.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.ComponentModel.DataAnnotations.Schema</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">Person</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="n">DateTime</span> <span class="n">BirthDateTime1</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="p">[</span><span class="nf">Column</span><span class="p">(</span><span class="n">TypeName</span> <span class="p">=</span> <span class="s">"DateTime"</span><span class="p">)]</span>
+    <span class="k">public</span> <span class="n">DateTime</span> <span class="n">BirthDateTime2</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="p">[</span><span class="nf">Column</span><span class="p">(</span><span class="n">TypeName</span> <span class="p">=</span> <span class="s">"DateTime2"</span><span class="p">)]</span>
+    <span class="k">public</span> <span class="n">DateTime</span> <span class="n">BirthDateTime3</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="k">public</span> <span class="n">DateTimeOffset</span> <span class="n">BirthDateTime4</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="add-edmdate-property">Add Edm.Date property</h3>
+<p>The following code define an <code class="highlighter-rouge">Edm.Date</code> property in the EDM model.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.ComponentModel.DataAnnotations.Schema</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">Person</span>
+<span class="p">{</span>
+    <span class="p">[</span><span class="nf">Column</span><span class="p">(</span><span class="n">TypeName</span> <span class="p">=</span> <span class="s">"Date"</span><span class="p">)]</span>
+    <span class="k">public</span> <span class="n">DateTime</span> <span class="n">BirthDate</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="add-edmduration-property">Add Edm.Duration property</h3>
+<p>The following code define an <code class="highlighter-rouge">Edm.Duration</code> property in the EDM model.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.ComponentModel.DataAnnotations.Schema</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">Person</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="n">TimeSpan</span> <span class="n">WorkingHours</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="add-edmtimeofday-property">Add Edm.TimeOfDay property</h3>
+<p>The following code define an <code class="highlighter-rouge">Edm.TimeOfDay</code> property in the EDM model. Please note that you MUST NOT omit the <code class="highlighter-rouge">ColumnTypeAttribute</code> on a <code class="highlighter-rouge">TimeSpan</code> property otherwise it will be recognized as an <code class="highlighter-rouge">Edm.Duration</code> as described above.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.ComponentModel.DataAnnotations.Schema</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">Person</span>
+<span class="p">{</span>
+    <span class="p">[</span><span class="nf">Column</span><span class="p">(</span><span class="n">TypeName</span> <span class="p">=</span> <span class="s">"Time"</span><span class="p">)]</span>
+    <span class="k">public</span> <span class="n">TimeSpan</span> <span class="n">BirthTime</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>As before, if you have the need to override <code class="highlighter-rouge">ODataPayloadValueConverter</code>, please now change to override <code class="highlighter-rouge">RestierPayloadValueConverter</code> instead in order not to break the payload value conversion specialized for these temporal types.</p>
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="03-02-Controllers">3.2 Use Controllers in RESTier [>=0.4.0]</h2>
+          <article class="post-content">
+            <p>RESTier aims to achieve more OData features with less user code. Currently in OData Web API users have to write a controller for each entity set or singleton and a lot of actions in that controller to support various property access. Mostly code among controllers is similar and redundant. Thus <code class="highlighter-rouge">RestierController</code> (previously <code class="highlighter-rouge">ODataDomainController</code>) was introduced to serve as the globally unique controller to handle most OData requests. While most is not everything, there are a few scenarios not covered by <code class="highlighter-rouge">RestierController</code> yet. As a result, traditional controllers (<code class="highlighter-rouge">ODataController</code> or <code class="highlighter-rouge">ApiController</code>) are still supported in RESTier’s routing convention with higher priority than <code class="highlighter-rouge">RestierController</code>. With such a flexible design, RESTier can satisfy various user requirements to implement an OData service.</p>
+
+<h3 id="odata-features-supported-by-restiercontroller">OData features supported by RestierController</h3>
+<p>Now users need not write any controller code any more to enjoy the following OData features provided by <code class="highlighter-rouge">RestierController</code>:</p>
+
+<ul>
+  <li>Query service document</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">GET ~</code></pre></figure>
+
+<ul>
+  <li>Query metadata document</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">GET ~/$metadata</code></pre></figure>
+
+<ul>
+  <li>Query entity set</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">GET ~/People</code></pre></figure>
+
+<ul>
+  <li>Query single entity</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">GET ~/People(1)</code></pre></figure>
+
+<ul>
+  <li>Query any property path</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">GET ~/People(1)/FirstName (primitive property)
+GET ~/People(1)/FavoriteFeature (enum property)
+GET ~/People(1)/Friends (navigation property)
+GET ~/People(1)/Emails (collection property)
+GET ~/Events(1)/OccursAt (complex property)
+GET ~/Events(1)/OccursAt/Address</code></pre></figure>
+
+<ul>
+  <li>Query entity/value count (by $count)</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">GET ~/People(1)/$count
+GET ~/People(1)/Friends/$count
+GET ~/People(1)/Emails/$count</code></pre></figure>
+
+<ul>
+  <li>Query raw property value (by $value)</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">GET ~/People(1)/FirstName/$value
+GET ~/People(1)/FavoriteFeature/$value
+GET ~/Events(1)/OccursAt/Address/$value</code></pre></figure>
+
+<ul>
+  <li>Create an entity</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">POST ~/People</code></pre></figure>
+
+<ul>
+  <li>Fully update an entity</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">PUT ~/People(1)</code></pre></figure>
+
+<ul>
+  <li>Partially update an entity</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">PATCH ~/People(1)</code></pre></figure>
+
+<ul>
+  <li>Delete an entity</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">DELETE ~/People(1)</code></pre></figure>
+
+<h3 id="a-little-secret-behind-query">A little secret behind query</h3>
+<p>Users may wonder how RESTier handles all these queries in a generic way in only one controller. Actually <code class="highlighter-rouge">RestierController</code> will use an internal class <code class="highlighter-rouge">RestierQueryBuilder</code> to go through each <code class="highlighter-rouge">ODataPathSegment</code> and gradually compose a LINQ query. Here is an example. If user sends the following query:</p>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">GET ~/People(1)/Emails/$count</code></pre></figure>
+
+<p>The final LINQ query generated will be like (suppose EF is being used):</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="n">DbContext</span><span class="p">.</span><span class="n">People</span><span class="p">.</span><span class="n">Where</span><span class="p">&lt;</span><span class="n">Person</span><span class="p">&gt;(</span><span class="n">p</span> <span class="p">=&gt;</span> <span class="n">p</span><span class="p">.</span><span class="n">PersonId</span> <span class="p">==</span> <span class="m">1</span><span class="p">).</span><span class="n">SelectMany</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;(</span><span class="n">p</span> <span class="p">=&gt;</span> <span class="n">p</span><span class="p">.</span><span class="n">Emails</span><span class="p">).</span><span class="nf">Count</span><span class="p">();</span></code></pre></figure>
+
+<h3 id="use-custom-controllers">Use custom controllers</h3>
+<p>Users may not always want their requests to be processed by <code class="highlighter-rouge">RestierController</code>. RESTier of course provides several ways to override this.</p>
+
+<ul>
+  <li><strong>Convention routing</strong>. If user defines a controller (<strong>MUST</strong> inherit from <code class="highlighter-rouge">ODataController</code>) with specific name for an entity set (like <code class="highlighter-rouge">PeopleController</code> for the entity set <code class="highlighter-rouge">People</code>), all requests to that entity set will be routed to the the user-defined controller instead of <code class="highlighter-rouge">RestierController</code>. Refer to <strong><a href="http://odata.github.io/WebApi/#03-02-built-in-routing-conventions">conversion routing document</a></strong> for more details.</li>
+  <li><strong>Attribute routing</strong>. <code class="highlighter-rouge">ODataRouteAttribute</code> always has the highest priority in routing. Now users are recommended to use attribute routing to implement OData operation and singleton. Refer to <strong><a href="http://odata.github.io/WebApi/#03-03-attrribute-routing">attribute routing document</a></strong> for more details.</li>
+</ul>
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="03-03-InMemory">3.3 In-Memory Provider [0.4.0 only]</h2>
+          <article class="post-content">
+            <p>RESTier supports building an OData service with <strong>all-in-memory</strong> resources. However currently RESTier has not provided a dedicated in-memory provider (probably part of the future plan) module so users have to write some service code to bootstrap the initial model with EDM types themselves. There is a sample service with in-memory provider <a href="https://github.com/OData/RESTier/tree/0.4.0-rc2/test/ODataEndToEndTests/Microsoft.Restier.WebApi.Test.Services.TrippinInMemory">here</a>. This subsection mainly talks about how such a service is created.</p>
+
+<p>First please create an <strong>Empty ASP.NET Web API</strong> project following the instructions in <a href="http://odata.github.io/RESTier/#01-02-Bootstrap">Section 1.2</a>. Stop <strong>BEFORE</strong> the <strong>Generate the model classes</strong> part.</p>
+
+<h3 id="create-the-api-class">Create the Api class</h3>
+<p>Create a simple data type <code class="highlighter-rouge">Person</code> with some properties and “fabricate” some fake data. Then add the first entity set <code class="highlighter-rouge">People</code> to the <code class="highlighter-rouge">Api</code> class:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.ObjectModel</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading.Tasks</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Web.OData.Builder</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.OData.Edm</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core.Model</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.TrippinInMemory</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinApi</span> <span class="p">:</span> <span class="n">ApiBase</span>
+    <span class="p">{</span>
+        <span class="k">private</span> <span class="k">static</span> <span class="k">readonly</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Person</span><span class="p">&gt;</span> <span class="n">people</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Person</span><span class="p">&gt;</span>
+        <span class="p">{</span>
+            <span class="p">...</span>
+        <span class="p">};</span>
+
+        <span class="k">public</span> <span class="n">IQueryable</span><span class="p">&lt;</span><span class="n">Person</span><span class="p">&gt;</span> <span class="n">People</span>
+        <span class="p">{</span>
+            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">people</span><span class="p">.</span><span class="nf">AsQueryable</span><span class="p">();</span> <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="create-an-initial-model">Create an initial model</h3>
+<p>Since the RESTier convention will not produce any EDM type, an initial model with at least the <code class="highlighter-rouge">Person</code> type needs to be created by service. Here the <code class="highlighter-rouge">ODataConventionModelBuilder</code> from OData Web API is used for quick model building.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.TrippinInMemory</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinApi</span> <span class="p">:</span> <span class="n">ApiBase</span>
+    <span class="p">{</span>
+        <span class="k">protected</span> <span class="k">override</span> <span class="n">ApiConfiguration</span> <span class="nf">CreateApiConfiguration</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="k">base</span><span class="p">.</span><span class="nf">CreateApiConfiguration</span><span class="p">()</span>
+                <span class="p">.</span><span class="n">AddHookHandler</span><span class="p">&lt;</span><span class="n">IModelBuilder</span><span class="p">&gt;(</span><span class="k">new</span> <span class="nf">ModelBuilder</span><span class="p">());</span>
+        <span class="p">}</span>
+
+        <span class="k">private</span> <span class="k">class</span> <span class="nc">ModelBuilder</span> <span class="p">:</span> <span class="n">IModelBuilder</span>
+        <span class="p">{</span>
+            <span class="k">public</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IEdmModel</span><span class="p">&gt;</span> <span class="nf">GetModelAsync</span><span class="p">(</span><span class="n">InvocationContext</span> <span class="n">context</span><span class="p">,</span> <span class="n">CancellationToken</span> <span class="n">cancellationToken</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">var</span> <span class="n">builder</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">ODataConventionModelBuilder</span><span class="p">();</span>
+                <span class="n">builder</span><span class="p">.</span><span class="n">EntityType</span><span class="p">&lt;</span><span class="n">Person</span><span class="p">&gt;();</span>
+                <span class="k">return</span> <span class="n">Task</span><span class="p">.</span><span class="nf">FromResult</span><span class="p">(</span><span class="n">builder</span><span class="p">.</span><span class="nf">GetEdmModel</span><span class="p">());</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="configure-the-odata-endpoint">Configure the OData endpoint</h3>
+<p>Replace the <code class="highlighter-rouge">WebApiConfig</code> class with the following code. No need to create a custom controller if users don’t have attribute routing.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System.Web.Http</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Batch</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.TrippinInMemory</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">class</span> <span class="nc">WebApiConfig</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Register</span><span class="p">(</span><span class="n">HttpConfiguration</span> <span class="n">config</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">config</span><span class="p">.</span><span class="n">MapRestierRoute</span><span class="p">&lt;</span><span class="n">TrippinApi</span><span class="p">&gt;(</span>
+                <span class="s">"TrippinApi"</span><span class="p">,</span>
+                <span class="s">"api/Trippin"</span><span class="p">,</span>
+                <span class="k">new</span> <span class="nf">RestierBatchHandler</span><span class="p">(</span><span class="n">GlobalConfiguration</span><span class="p">.</span><span class="n">DefaultServer</span><span class="p">)).</span><span class="nf">Wait</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="03-04-InMemory-0-5-0">3.4 In-Memory Provider [>=0.5.0]</h2>
+          <article class="post-content">
+            <p>RESTier supports building an OData service with <strong>all-in-memory</strong> resources. However currently RESTier has not provided a dedicated in-memory provider module so users have to write some service code to bootstrap the initial model with EDM types themselves. There is a sample service with in-memory provider <a href="https://github.com/OData/RESTier/tree/apidev/test/ODataEndToEndTests/Microsoft.Restier.WebApi.Test.Services.TrippinInMemory">here</a>. This subsection mainly talks about how such a service is created.</p>
+
+<p>First please create an <strong>Empty ASP.NET Web API</strong> project following the instructions in <a href="http://odata.github.io/RESTier/#01-02-Bootstrap">Section 1.2</a>. Stop <strong>BEFORE</strong> the <strong>Generate the model classes</strong> part.</p>
+
+<h3 id="create-the-api-class">Create the Api class</h3>
+<p>Create a simple data type <code class="highlighter-rouge">Person</code> with some properties and “fabricate” some fake data. Then add the first entity set <code class="highlighter-rouge">People</code> to the <code class="highlighter-rouge">Api</code> class:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.ObjectModel</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading.Tasks</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Web.OData.Builder</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.OData.Edm</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.Core.Model</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.TrippinInMemory</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinApi</span> <span class="p">:</span> <span class="n">ApiBase</span>
+    <span class="p">{</span>
+        <span class="k">private</span> <span class="k">static</span> <span class="k">readonly</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Person</span><span class="p">&gt;</span> <span class="n">people</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Person</span><span class="p">&gt;</span>
+        <span class="p">{</span>
+            <span class="p">...</span>
+        <span class="p">};</span>
+
+        <span class="k">public</span> <span class="n">IQueryable</span><span class="p">&lt;</span><span class="n">Person</span><span class="p">&gt;</span> <span class="n">People</span>
+        <span class="p">{</span>
+            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">people</span><span class="p">.</span><span class="nf">AsQueryable</span><span class="p">();</span> <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="create-an-initial-model">Create an initial model</h3>
+<p>Since the RESTier convention will not produce any EDM type, an initial model with at least the <code class="highlighter-rouge">Person</code> type needs to be created by service. Here the <code class="highlighter-rouge">ODataConventionModelBuilder</code> from OData Web API is used for quick model building.
+Any model building methods supported by Web API OData can be used here, refer to <strong><a href="http://odata.github.io/WebApi/#02-01-model-builder-abstract">Web API OData Model builder </a></strong>document for more information.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.TrippinInMemory</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">TrippinApi</span> <span class="p">:</span> <span class="n">ApiBase</span>
+    <span class="p">{</span>
+        <span class="k">protected</span> <span class="k">override</span> <span class="n">IServiceCollection</span> <span class="nf">ConfigureApi</span><span class="p">(</span><span class="n">IServiceCollection</span> <span class="n">services</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">services</span><span class="p">.</span><span class="n">CutoffPrevious</span><span class="p">&lt;</span><span class="n">IModelBuilder</span><span class="p">&gt;(</span><span class="k">new</span> <span class="nf">ModelBuilder</span><span class="p">());</span>
+            <span class="k">return</span> <span class="k">base</span><span class="p">.</span><span class="nf">ConfigureApi</span><span class="p">(</span><span class="n">services</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">private</span> <span class="k">class</span> <span class="nc">ModelBuilder</span> <span class="p">:</span> <span class="n">IModelBuilder</span>
+        <span class="p">{</span>
+            <span class="k">public</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IEdmModel</span><span class="p">&gt;</span> <span class="nf">GetModelAsync</span><span class="p">(</span><span class="n">InvocationContext</span> <span class="n">context</span><span class="p">,</span> <span class="n">CancellationToken</span> <span class="n">cancellationToken</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">var</span> <span class="n">builder</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">ODataConventionModelBuilder</span><span class="p">();</span>
+                <span class="n">builder</span><span class="p">.</span><span class="n">EntityType</span><span class="p">&lt;</span><span class="n">Person</span><span class="p">&gt;();</span>
+                <span class="k">return</span> <span class="n">Task</span><span class="p">.</span><span class="nf">FromResult</span><span class="p">(</span><span class="n">builder</span><span class="p">.</span><span class="nf">GetEdmModel</span><span class="p">());</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="configure-the-odata-endpoint">Configure the OData endpoint</h3>
+<p>Replace the <code class="highlighter-rouge">WebApiConfig</code> class with the following code. No need to create a custom controller if users don’t have attribute routing.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System.Web.Http</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Batch</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">Microsoft.Restier.WebApi.Test.Services.TrippinInMemory</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">class</span> <span class="nc">WebApiConfig</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Register</span><span class="p">(</span><span class="n">HttpConfiguration</span> <span class="n">config</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">config</span><span class="p">.</span><span class="n">MapRestierRoute</span><span class="p">&lt;</span><span class="n">TrippinApi</span><span class="p">&gt;(</span>
+                <span class="s">"TrippinApi"</span><span class="p">,</span>
+                <span class="s">"api/Trippin"</span><span class="p">,</span>
+                <span class="k">new</span> <span class="nf">RestierBatchHandler</span><span class="p">(</span><span class="n">GlobalConfiguration</span><span class="p">.</span><span class="n">DefaultServer</span><span class="p">)).</span><span class="nf">Wait</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+          </article>
+        </li>
+        
+        
+        
+      </ul>
+      
+      <h1 class="post-title" id="4-Deep-in-RESTier">4. DEEP IN RESTIER</h1>
+      <ul class="post-list">
+        
+        
+        
+        
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="04-01-Infrastructure">4.1 RESTier infrastructure</h2>
+          <article class="post-content">
+            <p><img src="/RESTier/images/04-01-01-RESTier Architecture.svg" alt="" /></p>
+
+<p>Restier provides a connection between various data sources and existing clients. The framework contains 4 components: Core, Module, Provider and Publisher:</p>
+
+<ul>
+  <li>The core component provides functionalities for building up domain specific metadata, and logic for data CRUD processing flow. It also includes some extensible interfaces which allows pluggable modules.</li>
+  <li>The module component provides the common service elements such as authorization, logging, and conventions that allow users to set up a service more quickly.</li>
+  <li>The provider component includes data source adapters which provide functionalities for building up metadata and conduct data exchange with external data sources.</li>
+  <li>The publisher component provides functionalities for exposing the domain specific data via a new service interface, which could be understand by existing clients.</li>
+</ul>
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="04-02-Hook-Handler">4.2 RESTier Hook Handler (0.4.0 only)</h2>
+          <article class="post-content">
+            <p>The hook handler in RESTier provides a way for setting custom extension points.</p>
+
+<h3 id="implement-a-single-hook-handler">Implement a single hook handler</h3>
+<p>Basically we have the following interface for all hook handlers</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">interface</span> <span class="n">IHookHandler</span>
+<span class="p">{</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>For a specific hook handler, we will also provide the corresponding interface.
+For example, for model builder, we have the following interface hook handler for building up a service model:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">interface</span> <span class="n">IModelBuilder</span> <span class="p">:</span> <span class="n">IHookHandler</span>
+<span class="p">{</span>
+ 
+	<span class="n">Task</span><span class="p">&lt;</span><span class="n">IEdmModel</span><span class="p">&gt;</span> <span class="nf">GetModelAsync</span><span class="p">(</span><span class="n">InvocationContext</span> <span class="n">context</span><span class="p">,</span> <span class="n">CancellationToken</span> <span class="n">cancellationToken</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>To support this hook handler, user could write his custom class and implement such interface.</p>
+
+<h3 id="implement-a-chained-hook-handler">Implement a chained hook handler</h3>
+<p>Before 0.3.0-beta2, RESTier supports two kinds of hook (singleton hook and multi-cast hook point handler).
+For singleton hook, users can specifiy one single hook implementation, and the invoker will call the hook once.
+For multi-cast hook, users can add the hook implementation in sequence, while the invoker will call all the hooks in certain order (it may vary for different hook.)</p>
+
+<p>But later we introduced the current hook mechanism, which allows the user to maintain the hook chain. This is also something called Matryoshka doll model.</p>
+
+<p>If user wants to support hook hanlder chain, he could choose to implement the following interface besides the IHookHandler.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">interface</span> <span class="n">IDelegateHookHandler</span><span class="p">&lt;</span><span class="n">T</span><span class="p">&gt;</span> <span class="n">where</span> <span class="n">T</span> <span class="p">:</span> <span class="n">IHookHandler</span>
+<span class="p">{</span>
+	
+	<span class="n">T</span> <span class="n">InnerHandler</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>For example, to support a chain of model producer, we can have the following class:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">class</span> <span class="nc">MyModelBuilder</span> <span class="p">:</span> <span class="n">IModelBuilder</span><span class="p">,</span> <span class="n">IDelegateHookHandler</span><span class="p">&lt;</span><span class="n">IModelBuilder</span><span class="p">&gt;</span>
+<span class="p">{</span>
+	<span class="k">public</span> <span class="n">IModelBuilder</span> <span class="n">InnerHandler</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+	
+	<span class="k">public</span> <span class="n">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IEdmModel</span><span class="p">&gt;</span> <span class="nf">GetModelAsync</span><span class="p">(</span><span class="n">InvocationContext</span> <span class="n">context</span><span class="p">,</span> <span class="n">CancellationToken</span> <span class="n">cancellationToken</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">EdmModel</span> <span class="n">model</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+		<span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">InnerHandler</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">model</span> <span class="p">=</span> <span class="n">await</span> <span class="k">this</span><span class="p">.</span><span class="n">InnerHandler</span><span class="p">.</span><span class="nf">GetModelAsync</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">cancellationToken</span><span class="p">)</span> <span class="k">as</span> <span class="n">EdmModel</span><span class="p">;</span>
+		<span class="p">}</span>
+
+		<span class="k">if</span> <span class="p">(</span><span class="n">model</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="c1">// We don't plan to extend an empty model with operations.
+</span>			<span class="k">return</span> <span class="k">null</span><span class="p">;</span>
+		<span class="p">}</span>
+
+		<span class="c1">// some model extender
+</span>		<span class="k">return</span> <span class="n">model</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>The InnnerHandler would be auto set to a previous hook handler if present, during the time this hook handler was added.</p>
+
+<h3 id="set-a-hook-handler">Set a hook handler</h3>
+<p>Then we have got the following two APIs for setting hook handlers:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">class</span> <span class="nc">ApiConfiguration</span> 
+<span class="p">{</span>
+	<span class="k">public</span> <span class="n">ApiConfiguration</span> <span class="n">AddHookHandler</span><span class="p">&lt;</span><span class="n">T</span><span class="p">&gt;(</span><span class="n">T</span> <span class="n">handler</span><span class="p">)</span> <span class="n">where</span> <span class="n">T</span> <span class="p">:</span> <span class="k">class</span><span class="err">,</span> <span class="nc">IHookHandler</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>For each Api class instance, it will have a corresponding configuration. And we can set the hook handlers on the ApiConfiguration instance.</p>
+
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="04-03-Api-Service">4.3 RESTier API Service (>=0.5.0)</h2>
+          <article class="post-content">
+            <p>Users can inject their custom API services into RESTier to extend various functionalities. There is a big progress since 0.4.0. Now the concept of <strong>hook handler</strong> has become <strong>API service</strong> in 0.5.0. We have removed the old interfaces <code class="highlighter-rouge">IHookHandler</code> and <code class="highlighter-rouge">IDelegateHookHandler</code> to adapt to the concept change. Thus the implementation of any custom API service (previously known as hook handler) should also be changed accordingly.</p>
+
+<p>All API services registered as <strong>one specific type</strong> (either a class or an interface) are organized in a consistently chained (or nested) way. Each API service in a chain can choose whether to call the next (or inner) API service. The last API service registered is always invoked first if current service always call inner method first.</p>
+
+<p>As a practical example in RESTier, there is an API service interface called <code class="highlighter-rouge">IModelBuilder</code> to build or extend an EDM model. By default, RESTier will register two model builders for <code class="highlighter-rouge">IModelBuilder</code>. The model builder from the data provider (e.g., <code class="highlighter-rouge">ModelProducer</code> in RESTier EF) is always registered first. The <code class="highlighter-rouge">RestierModelExtender</code> is always registered later. Any custom model builder will be registered sequentially between or before or after the two built-in model builders based on the way been registered. When the API service <code class="highlighter-rouge">IModelBuilder</code> is invoked, the outermost <code class="highlighter-rouge">ModelBuilder</code> is always invoked first. It first invokes the inner API service which could possibly be the model builder from the data provider or some custom model builder (if any). The custom model builder can choose to extend the model returned from an inner builder, or otherwise it can simply choose not to call the inner one and directly return a new model. The model builder from the data provider is typically innermost and thus has no inner builder to call.</p>
+
+<p>This subsection shows how to implement custom API services and inject them into RESTier between two built-in model builders. For before or after, refer to <a href="http://odata.github.io/RESTier/#02-05-Model-building-0-5-0">section 2.5 Model Building</a> part. This is common for all other services which allows customization.</p>
+
+<h3 id="implement-an-api-service">Implement an API service</h3>
+<p>The following sample code is to implement a custom model builder. Please note that if you want to call the inner builder, you need to put a <strong>settable property</strong> of <code class="highlighter-rouge">IModelBuilder</code> into your builder class. <strong>The accessibility and the name of the property doesn’t matter here</strong>. Then try to call the inner builder in the service implementation. If you don’t want to call any inner builder, you can just <strong>omit the property</strong> and remove the related logic.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">class</span> <span class="nc">MyModelBuilder</span> <span class="p">:</span> <span class="n">IModelBuilder</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="n">IModelBuilder</span> <span class="n">InnerBuilder</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="k">public</span> <span class="n">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IEdmModel</span><span class="p">&gt;</span> <span class="nf">GetModelAsync</span><span class="p">(</span><span class="n">InvocationContext</span> <span class="n">context</span><span class="p">,</span> <span class="n">CancellationToken</span> <span class="n">cancellationToken</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">IEdmModel</span> <span class="n">model</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">InnerBuilder</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="c1">// Call the inner builder to build a model first.
+</span>            <span class="n">model</span> <span class="p">=</span> <span class="n">await</span> <span class="k">this</span><span class="p">.</span><span class="n">InnerBuilder</span><span class="p">.</span><span class="nf">GetModelAsync</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">cancellationToken</span><span class="p">);</span>
+        <span class="p">}</span>
+        
+        <span class="k">if</span> <span class="p">(</span><span class="n">model</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="c1">// Do something to extend the model.
+</span>        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="n">model</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="register-an-api-service">Register an API service</h3>
+<p>We need to register <code class="highlighter-rouge">MyModelBuilder</code> into the API to make it work. You can override the <code class="highlighter-rouge">ConfigureApi</code> method in your API class to do so. Here is the sample code. If you want to call the inner builder, you need to register it using <code class="highlighter-rouge">ChainPrevious</code> otherwise use <code class="highlighter-rouge">CutoffPrevious</code> instead. There are also overloads for the two methods that take an existing service instance or a service factory method. By the way, all those methods are fluent API so you can call them in a chained way.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">class</span> <span class="nc">MyApi</span> <span class="p">:</span> <span class="n">ApiBase</span>
+<span class="p">{</span>
+    <span class="k">protected</span> <span class="k">override</span> <span class="n">IServiceCollection</span> <span class="nf">ConfigureApi</span><span class="p">(</span><span class="n">IServiceCollection</span> <span class="n">services</span><span class="p">)</span>
+    <span class="p">{</span>        
+            <span class="n">Type</span> <span class="n">apiType</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="nf">GetType</span><span class="p">();</span>
+            <span class="c1">// Add core and conversion's services
+</span>            <span class="n">services</span> <span class="p">=</span> <span class="n">services</span><span class="p">.</span><span class="nf">AddCoreServices</span><span class="p">(</span><span class="n">apiType</span><span class="p">)</span>
+                <span class="p">.</span><span class="nf">AddAttributeServices</span><span class="p">(</span><span class="n">apiType</span><span class="p">)</span>
+                <span class="p">.</span><span class="nf">AddConventionBasedServices</span><span class="p">(</span><span class="n">apiType</span><span class="p">);</span>
+
+            <span class="c1">// Add EF related services which has ModelProducer
+</span>            <span class="n">services</span><span class="p">.</span><span class="n">AddEfProviderServices</span><span class="p">&lt;</span><span class="n">NorthwindContext</span><span class="p">&gt;();</span>
+
+            <span class="c1">// Add customized services, after EF model builder and before WebApi operation model builder
+</span>            <span class="n">services</span><span class="p">.</span><span class="n">ChainPrevious</span><span class="p">&lt;</span><span class="n">IModelBuilder</span><span class="p">,</span> <span class="n">MyModelBuilder</span><span class="p">&gt;();</span>
+
+            <span class="c1">// This is used to add the publisher's services which has RestierModelExtender
+</span>            <span class="n">ApiConfiguration</span><span class="p">.</span><span class="nf">GetPublisherServiceCallback</span><span class="p">(</span><span class="n">apiType</span><span class="p">)(</span><span class="n">services</span><span class="p">);</span>
+
+            <span class="k">return</span> <span class="n">services</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>If you want to register a lambda expression (usually for advanced usage) as an API service, you can use the <code class="highlighter-rouge">AddContributor&lt;T&gt;</code> method. Here is an example. The parameter <code class="highlighter-rouge">sp</code> is of <code class="highlighter-rouge">IServiceProvider</code> and the parameter <code class="highlighter-rouge">next</code> is of <code class="highlighter-rouge">Func&lt;T&gt;</code> which represents the factory of the last API service registered. This means you can call <code class="highlighter-rouge">next()</code> to get the last API service instance.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="n">services</span><span class="p">.</span><span class="n">AddContributor</span><span class="p">&lt;</span><span class="n">IModelBuilder</span><span class="p">&gt;((</span><span class="n">sp</span><span class="p">,</span> <span class="n">next</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="cm">/* return a model builder */</span><span class="p">);</span></code></pre></figure>
+
+<p>In the service implementation, the parameter type <code class="highlighter-rouge">IServiceCollection</code> is actually a container builder from Microsoft Dependency Injection Framework (DI). You can do whatever applicable to a normal DI container here. It is notable that you can also take advantage of the powerful <strong>scope</strong> feature in DI here! RESTier will create a new scope for each individual request in <code class="highlighter-rouge">ApiContext</code> which enables you to register scoped services whose lifetime is per-request.</p>
+
+<p>Please visit <a href="https://docs.asp.net/en/latest/fundamentals/dependency-injection.html">https://docs.asp.net/en/latest/fundamentals/dependency-injection.html</a> to grasp some basic understanding about DI before proceeding.</p>
+
+<p>The following example is to register a scoped <code class="highlighter-rouge">MyDbContext</code> service so that you have a new <code class="highlighter-rouge">MyDbContext</code> instance for each request.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">class</span> <span class="nc">MyDbContext</span> <span class="p">:</span> <span class="n">DbContext</span> <span class="p">{...}</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">MyApi</span> <span class="p">:</span> <span class="n">ApiBase</span>
+<span class="p">{</span>
+    <span class="k">protected</span> <span class="k">override</span> <span class="n">IServiceCollection</span> <span class="nf">ConfigureApi</span><span class="p">(</span><span class="n">IServiceCollection</span> <span class="n">services</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="k">base</span><span class="p">.</span><span class="nf">ConfigureApi</span><span class="p">(</span><span class="n">services</span><span class="p">)</span>
+            <span class="p">.</span><span class="n">AddScoped</span><span class="p">&lt;</span><span class="n">MyDbContext</span><span class="p">&gt;(</span><span class="n">sp</span> <span class="p">=&gt;</span> <span class="n">sp</span><span class="p">.</span><span class="n">GetService</span><span class="p">&lt;</span><span class="n">T</span><span class="p">&gt;());</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>You can also make a specific API service singleton, scoped or transient (though not common) by calling <code class="highlighter-rouge">MakeSingleton</code>, <code class="highlighter-rouge">MakeScoped</code> or <code class="highlighter-rouge">MakeTransient</code>. Here is a sample which is to make <code class="highlighter-rouge">IModelBuilder</code> scoped.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">class</span> <span class="nc">MyApi</span> <span class="p">:</span> <span class="n">ApiBase</span>
+<span class="p">{</span>
+    <span class="k">protected</span> <span class="k">override</span> <span class="n">IServiceCollection</span> <span class="nf">ConfigureApi</span><span class="p">(</span><span class="n">IServiceCollection</span> <span class="n">services</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">// Previous registered logic
+</span>        <span class="p">...</span>
+        <span class="n">services</span><span class="p">.</span><span class="n">MakeScoped</span><span class="p">&lt;</span><span class="n">IModelBuilder</span><span class="p">&gt;();</span>
+        <span class="k">return</span> <span class="n">services</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="get-an-api-service">Get an API service</h3>
+<p>No matter in which way you register an API service of <code class="highlighter-rouge">T</code>, the only and unified way to get that service out is to use <code class="highlighter-rouge">(ApiContext).GetApiService&lt;T&gt;</code> from RESTier or <code class="highlighter-rouge">IServiceProvider.GetService&lt;T&gt;</code> from DI.</p>
+
+          </article>
+        </li>
+        
+        
+        
+      </ul>
+      
+      <h1 class="post-title" id="5-Clients">5. CLIENTS</h1>
+      <ul class="post-list">
+        
+        
+        
+        
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="05-01-Client">5.1 Clients</h2>
+          <article class="post-content">
+            <p>RESTier helps to build OData service which is RESTful services, so any REST client or http client can be used to send requests and receive responses.</p>
+
+<p>OData team develops a .Net Client which can work with any OData services, refer to <a href="http://odata.github.io/odata.net/#04-01-basic-crud-operations">“Basic CRUD Operations with OData .Net Client”</a> for details.</p>
+
+<p>OData team also develops two client tools to facilitate OData Client application development, refer to <a href="http://blogs.msdn.com/b/odatateam/archive/2014/03/12/how-to-use-odata-client-code-generator-to-generate-client-side-proxy-class.aspx">“Using OData Client Code Generator to generate client-side proxy class”</a> and <a href="http://odata.github.io/odata.net/#OData-Client-Code-Generation-Tool">“Using OData Connected Service to generate client-side proxy class”</a> for details.</p>
+
+          </article>
+        </li>
+        
+        
+        
+      </ul>
+      
+      <h1 class="post-title" id="6-Announcements">6. ANNOUNCEMENTS</h1>
+      <ul class="post-list">
+        
+        
+        
+        
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="06-01-Preview-Announcement">6.1 Release notes for RESTier 0.2.0-preview</h2>
+          <article class="post-content">
+            <p>Below are the features supported in the RESTier 0.2.0-preview, as well as the limitations of the current version.</p>
+
+<h3 id="easily-build-an-odata-v4-service">Easily build an OData V4 service</h3>
+
+<p><strong>Features directly supported</strong></p>
+
+<p>Just create one <code class="highlighter-rouge">ODataDomainController&lt;&gt;</code> and all of the features below are automatically enabled:</p>
+
+<ul>
+  <li>Basic queries for metadata and top level entities.</li>
+  <li>System query options <code class="highlighter-rouge">$select</code>, <code class="highlighter-rouge">$expand</code>, <code class="highlighter-rouge">$filter</code>, <code class="highlighter-rouge">$orderby</code>, <code class="highlighter-rouge">$top</code>,
+  <code class="highlighter-rouge">$skip</code>, and <code class="highlighter-rouge">$format</code>.</li>
+  <li>Ability to request related entities.</li>
+  <li>Create, Update and Delete top-level entities.</li>
+  <li>Batch requests.</li>
+</ul>
+
+<p><strong>Leverage attribute routing to fall back to <a href="http://www.asp.net/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/create-an-odata-v4-endpoint">Web API OData</a> for features not directly supported by RESTier</strong></p>
+
+<ul>
+  <li>Request entity references with <code class="highlighter-rouge">$ref</code>.</li>
+  <li>Create, Update and Delete entities not on the top-level.</li>
+  <li>Modify relationships between entities.</li>
+  <li>etc.</li>
+</ul>
+
+<p><strong>Use <code class="highlighter-rouge">EdmModelExtender</code> to support features currently not directly supported by RESTier.</strong></p>
+
+<ul>
+  <li>OData functions.</li>
+  <li>OData actions</li>
+</ul>
+
+<h3 id="rich-domain-logic">Rich domain logic</h3>
+
+<ul>
+  <li>
+    <p>Role-based security</p>
+
+    <p>You can easily set restrictions for different entity sets. For example, you can provide users with READ permission on some entity sets, and INSPECT (only provides access to $metadata) on others.</p>
+  </li>
+  <li>
+    <p>Imperative views</p>
+
+    <p>Customized entity sets which are not in the data model can be easily added. Currently, these entity sets are read-only, and do not support CUD (Create, Update, Delete) operations.</p>
+  </li>
+  <li>
+    <p>Entity set filters</p>
+
+    <p>With entity set filters, you can easily set filters <em>before</em> entity data is retrieved. For example, if you want users to only see part of Customers based on their UserID, you can use entity set filters to pre-filter the results.</p>
+  </li>
+  <li>
+    <p>Submit logic</p>
+
+    <p>With submit logic, you can add custom business logic that fires during or after a specific operation is performed on an entity set (e.g., <code class="highlighter-rouge">OnInsertedProducts</code>).</p>
+  </li>
+</ul>
+
+<h3 id="limitations">Limitations</h3>
+
+<ul>
+  <li>Only supports OData V4.</li>
+  <li>Only supports Entity Framework as data providers.</li>
+</ul>
+
+<p>These are the two primary limitations currently, and we are looking at mitigating them in future releases. In the meanwhile, we’d like to hear your feedback and suggestions on how to improve RESTier.</p>
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="06-02-RESTier-open-sourced">6.2 RESTier now open sourced on GitHub</h2>
+          <article class="post-content">
+            <p>The source code of RESTier now is open-souced on <a href="http://github.com/OData/RESTier">GitHub</a>, together with the test code and the <a href="https://github.com/OData/RESTier/tree/master/test/Microsoft.Restier.Samples.Northwind.Tests">Northwind Samples</a>.</p>
+
+<p>We have heard a lot of feedback of RESTier and record them directly on <a href="http://github.com/OData/RESTier/issues">GitHub Issues</a>, with the source code open now, developers can explore and play with RESTier more easily. And code contributions, bug reports are warmly welcomed.</p>
+
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="06-03-0-3-0-beta-1">6.3 Release notes for RESTier 0.3.0-beta1</h2>
+          <article class="post-content">
+            <p><strong>Features supported in 0.3.0-beta1</strong></p>
+
+<ul>
+  <li>Complex type support <a href="https://github.com/OData/RESTier/issues/96">#96</a></li>
+</ul>
+
+<p><br />
+<strong>Improvements since 0.2.0-pre</strong></p>
+
+<ul>
+  <li>Northwind service uses script to generate database instead of .mdf/.ldf files <a href="https://github.com/OData/RESTier/issues/77">#77</a></li>
+  <li>Add StyleCop and FxCop to build process to ensure code quality</li>
+  <li>TripPin service supports singleton</li>
+  <li>Visual Studio 2015 and MSSQLLocalDB</li>
+  <li>Use xUnit 2.0 as the test framework for RESTier <a href="https://github.com/OData/RESTier/issues/104">#104</a></li>
+</ul>
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="06-04-0-3-0-beta-2">6.4 Release notes for RESTier 0.3.0-beta2</h2>
+          <article class="post-content">
+            <p><strong>Features supported in 0.3.0-beta2</strong></p>
+
+<ul>
+  <li>Support concrete classes that implement IDbSet&lt;&gt; <a href="https://github.com/OData/RESTier/issues/159">#159</a> by <a href="https://github.com/mkemal">mkemal</a></li>
+  <li>Support Edm.Date <a href="https://github.com/OData/RESTier/issues/138">#138</a>, <a href="http://odata.github.io/RESTier/#03-04-Date">Tutorial</a></li>
+</ul>
+
+<p><br />
+<strong>Bug-fixes since 0.3.0-beta1</strong></p>
+
+<ul>
+  <li>Fix incorrect status code <a href="https://github.com/OData/RESTier/issues/115">#115</a></li>
+  <li>Computed annotation should not be added for Identity property <a href="https://github.com/OData/RESTier/issues/116">#116</a></li>
+</ul>
+
+<p><br />
+<strong>Improvements since 0.3.0-beta1</strong></p>
+
+<ul>
+  <li>Automatically start TripPin service when running E2E cases <a href="https://github.com/OData/RESTier/issues/146">#146</a></li>
+  <li>No need to change machine configuration for running tests under Release mode</li>
+</ul>
+
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="06-05-0-4-0-rc">6.5 Release notes for RESTier 0.4.0-rc</h2>
+          <article class="post-content">
+            <p><strong>Features supported in 0.4.0-rc</strong></p>
+
+<ul>
+  <li>Unified hook handler mechanism for users to inject hooks, <a href="http://odata.github.io/RESTier/#04-04-Hook-Handler">Tutorial</a></li>
+  <li>Built-in <code class="highlighter-rouge">RestierController</code> now handles most CRUD scenarios for users including entity set access, singleton access, entity access, property access with $count/$value, $count query option support. <a href="https://github.com/OData/RESTier/issues/136">#136</a>, <a href="https://github.com/OData/RESTier/issues/193">#193</a>, <a href="https://github.com/OData/RESTier/issues/234">#234</a>, <a href="http://odata.github.io/RESTier/#03-05-Controllers">Tutorial</a></li>
+  <li>Support building entity set, singleton and operation from <code class="highlighter-rouge">Api</code> (previously <code class="highlighter-rouge">Domain</code>). Support navigation property binding. Now users can save much time writing code to build model. <a href="https://github.com/OData/RESTier/issues/207">#207</a>, <a href="http://odata.github.io/RESTier/#02-06-Model-building">Tutorial</a></li>
+  <li>Support in-memory data source provider <a href="https://github.com/OData/RESTier/issues/189">#189</a></li>
+</ul>
+
+<p><br />
+<strong>Bug-fixes since 0.3.0-beta2</strong></p>
+
+<ul>
+  <li>Fix IISExpress instance startup issue in E2E tests <a href="https://github.com/OData/RESTier/issues/145">#145</a>, <a href="https://github.com/OData/RESTier/issues/241">#241</a></li>
+  <li>Should return 400 if there is any invalid query option <a href="https://github.com/OData/RESTier/issues/176">#176</a></li>
+  <li>EF7 project bug fixes <a href="https://github.com/OData/RESTier/issues/253">#253</a>, <a href="https://github.com/OData/RESTier/issues/254">#254</a></li>
+</ul>
+
+<p><br />
+<strong>Improvements since 0.3.0-beta2</strong></p>
+
+<ul>
+  <li>Thorough API cleanup, code refactor and concept reduction <a href="https://github.com/OData/RESTier/issues/164">#164</a></li>
+  <li>The Conventions project was merged into the Core project. Conventions are now enabled by default. The <code class="highlighter-rouge">OnModelExtending</code> convention was removed due to inconsistency. <a href="https://github.com/OData/RESTier/issues/191">#191</a></li>
+  <li>Add a sample service with an in-memory provider <a href="https://github.com/OData/RESTier/issues/189">#189</a></li>
+  <li>Unified exception-handling process <a href="https://github.com/OData/RESTier/issues/24">#24</a>, <a href="https://github.com/OData/RESTier/issues/26">#26</a></li>
+  <li>Simplified <code class="highlighter-rouge">MapRestierRoute</code> now takes an <code class="highlighter-rouge">Api</code> class instead of a controller class. No custom controller required in simple cases.</li>
+  <li>Update project URL in RESTier NuGet packages.</li>
+</ul>
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="06-06-0-4-0-rc2">6.6 Release notes for RESTier 0.4.0-rc2</h2>
+          <article class="post-content">
+            <p><strong>Bug-fixes since 0.4.0-rc</strong></p>
+
+<ul>
+  <li>Support string as return type or argument of functions <a href="https://github.com/OData/RESTier/issues/258">#258</a></li>
+</ul>
+
+          </article>
+        </li>
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="06-07-0-5-0-beta">6.7 Release notes for RESTier 0.5.0-beta</h2>
+          <article class="post-content">
+            <p><strong>New features since 0.4.0-rc2</strong></p>
+
+<ul>
+  <li>[<a href="https://github.com/OData/RESTier/issues/150">Issue #150</a>] [PR <a href="https://github.com/OData/RESTier/pull/286">#286</a>] Integrate Microsoft Dependency Injection Framework into RESTier. <a href="http://odata.github.io/RESTier/#04-04-Api-Service">Tutorial</a>.</li>
+  <li>[<a href="https://github.com/OData/RESTier/issues/273">Issue #273</a>] [PR <a href="https://github.com/OData/RESTier/pull/278">#278</a>] Support temporal types in Restier.EF. <a href="http://odata.github.io/RESTier/#03-07-Temporal">Tutorial</a>.</li>
+</ul>
+
+<p><br />
+<strong>Bug-fixes since 0.4.0-rc2</strong></p>
+
+<ul>
+  <li>[<a href="https://github.com/OData/RESTier/issues/123">Issue #123</a>] [PR <a href="https://github.com/OData/RESTier/pull/294">#294</a>] Fix a bug that prevents using <code class="highlighter-rouge">Edm.Int64</code> as entity key.</li>
+  <li>[<a href="https://github.com/OData/RESTier/issues/269">Issue #269</a>] [PR <a href="https://github.com/OData/RESTier/pull/271">#271</a>] Fix a bug that <code class="highlighter-rouge">NullReferenceException</code> is thrown when POST/PATCH/PUT with null property values.</li>
+  <li>[<a href="https://github.com/OData/RESTier/issues/287">Issue #287</a>] [PR <a href="https://github.com/OData/RESTier/pull/314">#314</a>] Fix a bug that $count does not work correctly when there is $expand.</li>
+  <li>[<a href="https://github.com/OData/RESTier/issues/304">Issue #304</a>] [PR <a href="https://github.com/OData/RESTier/pull/306">#306</a>] Fix a bug that <code class="highlighter-rouge">GetModelAsync</code> is not thread-safe.</li>
+  <li>[<a href="https://github.com/OData/RESTier/issues/304">Issue #304</a>] [PR <a href="https://github.com/OData/RESTier/pull/322">#322</a>] Fix a bug that if <code class="highlighter-rouge">GetModelAsync</code> takes too long to complete, any subsequent request will fail.</li>
+  <li>[<a href="https://github.com/OData/RESTier/issues/308">Issue #308</a>] [PR <a href="https://github.com/OData/RESTier/pull/313">#313</a>] Fix a bug that <code class="highlighter-rouge">NullReferenceException</code> is thrown when <code class="highlighter-rouge">ColumnTypeAttribute</code> does not have a <code class="highlighter-rouge">TypeName</code> property specified.</li>
+  <li>[<a href="https://github.com/OData/RESTier/issues/309">Issue #309</a>][<a href="https://github.com/OData/RESTier/issues/310">Issue #310</a>][<a href="https://github.com/OData/RESTier/issues/311">Issue #311</a>][<a href="https://github.com/OData/RESTier/issues/312">Issue #312</a>] [PR <a href="https://github.com/OData/RESTier/pull/313">#313</a>] Fix various bugs in the RESTier query pipeline.</li>
+</ul>
+
+<p><br />
+<strong>API changes since 0.4.0-rc2</strong></p>
+
+<ul>
+  <li>The concept of <strong>hook handler</strong> now becomes <strong>API service</strong> after DI integration.</li>
+  <li>The interface <code class="highlighter-rouge">IHookHandler</code> and <code class="highlighter-rouge">IDelegateHookHandler</code> are removed. The implementation of any custom API service (previously known as hook handler) should also change accordingly. But this should not be big change. Please see <a href="http://odata.github.io/RESTier/#04-04-Api-Service">Tutorial</a> for details.</li>
+  <li><code class="highlighter-rouge">AddHookHandler</code> is now replaced with <code class="highlighter-rouge">ChainPrevious</code> and <code class="highlighter-rouge">CutoffPrevious</code> from DI. Please see <a href="http://odata.github.io/RESTier/#04-04-Api-Service">Tutorial</a> for details.</li>
+  <li><code class="highlighter-rouge">GetHookHandler</code> is now replaced with <code class="highlighter-rouge">GetApiService</code> and <code class="highlighter-rouge">GetService</code> from DI. Please see <a href="http://odata.github.io/RESTier/#04-04-Api-Service">Tutorial</a> for details.</li>
+  <li>All the serializers and <code class="highlighter-rouge">DefaultRestierSerializerProvider</code> are now public. But we still need to address <a href="https://github.com/OData/RESTier/issues/301">#301</a> to allow users to override the serializers.</li>
+  <li>The interface <code class="highlighter-rouge">IApi</code> is now removed. Use <code class="highlighter-rouge">ApiBase</code> instead. We never expect users to directly implement their API classes from <code class="highlighter-rouge">IApi</code> anyway. The <code class="highlighter-rouge">Context</code> property in <code class="highlighter-rouge">IApi</code> now becomes a public property in <code class="highlighter-rouge">ApiBase</code>.</li>
+  <li>Previously the <code class="highlighter-rouge">ApiData</code> class is very confusing. Now we have given it a more meaningful name <code class="highlighter-rouge">DataSourceStubs</code> which accurately describes the usage. Along with this change, we also rename <code class="highlighter-rouge">ApiDataReference</code> to <code class="highlighter-rouge">DataSourceStubReference</code> accordingly.</li>
+  <li><code class="highlighter-rouge">ApiBase.ApiConfiguration</code> is renamed to <code class="highlighter-rouge">ApiBase.Configuration</code> to keep consistent with <code class="highlighter-rouge">ApiBase.Context</code>.</li>
+  <li>The static <code class="highlighter-rouge">Api</code> class is now separated into two classes <code class="highlighter-rouge">ApiBaseExtensions</code> and <code class="highlighter-rouge">ApiContextExtensions</code> to eliminate the ambiguity regarding the previous <code class="highlighter-rouge">Api</code> class.</li>
+</ul>
+
+          </article>
+        </li>
+        
+        
+        
+      </ul>
+      
+      <h1 class="post-title" id="7-Tooling">7. TOOLING</h1>
+      <ul class="post-list">
+        
+        
+        
+        
+        
+        
+        
+        <li>
+          <h2 class="post-title" id="07-01-Restier-Scaffolding">7.1 Restier Scaffolding</h2>
+          <article class="post-content">
+            <h3 id="introduction">Introduction</h3>
+<p>This tool is used to modify the config class to simplifies the process of building the OData service with EF by Restier(&gt;=0.4.0-rc) in visual studio. The scaffolding item will appear in the scaffolding list by right click on any folder in project and select “Add” -&gt; “New Scaffolded Item”</p>
+
+<h3 id="install-visual-studio-extension-of-scaffolding">Install Visual Studio Extension of Scaffolding</h3>
+<p>The installer of Restier scaffolding can be downloaded from Visual Studio Gallery: <a href="https://visualstudiogallery.msdn.microsoft.com/6b18599d-34d5-4123-a586-cdf411728d23/">Restier Scaffolding</a>. Double click vsix to install, the extension supports the VS2013 and VS2015, now.</p>
+
+<h3 id="using-scaffolding-tool">Using Scaffolding Tool</h3>
+<p><a href="http://odata.github.io/RESTier/#01-04-Bootstrap">Here</a> is the process of building an OData V4 endpoint using RESTier. With scaffolding tool, you only need to “Create a project and a web app”, then “Generate the model classes”. The project will looks like:
+<img src="/RESTier/images/ScaffoldingBefore.PNG" alt="" /></p>
+
+<ol>
+  <li>Right click the APP_Start folder-&gt;Add-&gt;New Scaffolded items</li>
+  <li>Select “Microsoft OData Restier Config” under Common\Web API node</li>
+  <li>Select the “Data context class” needed and “WebApi config class” which will be modified to add the code as following:
+<img src="/RESTier/images/Scaffolding.PNG" alt="" /></li>
+  <li>Click “Change”. Scaffolding tool will add the code in “WebApiConfig.cs”. And add Restier assembly as reference</li>
+  <li>Reopen the “WebApiConfig.cs” to view the code added:
+<img src="/RESTier/images/ScaffoldingAfter.PNG" alt="" /></li>
+  <li>Rebuld the project and start:
+<img src="/RESTier/images/ScaffoldingResult.PNG" alt="" /></li>
+</ol>
+
+<p>Notice: The alpha version of tool may contain an issue: during the step 5 and 6, visual studio may need to be restarted.</p>
+
+
+          </article>
+        </li>
+        
+        
+        
+      </ul>
+      
+    </div>
+
+    <div class="col-md-3">
+    </div>
+
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="container">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55977038-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+    <h2 class="footer-heading">RESTier</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>RESTier</li>
+          <li><a href="mailto:odatafeedback@microsoft.com">odatafeedback@microsoft.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/odata">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">odata</span>
+            </a>
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Documentation - tutorials, guides - for RESTier.
+  The materials available on this site are licensed as set forth <a href="https://github.com/OData/odata.github.io/blob/master/License.txt">here</a>.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
   </body>
+
 </html>

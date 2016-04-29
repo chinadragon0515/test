@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>1.2 Bootstrap an OData service [>=0.4.0]</title>
+  <meta name="description" content="After RESTier 0.4.0, creating an OData service has never been easier! This subsection shows how to create an OData V4 endpoint using RESTier in a few minutes...">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="/RESTier/css/main.css">
+  <link rel="canonical" href="http://yourdomain.com/RESTier/01-02-Bootstrap/">
+  <link rel="alternate" type="application/rss+xml" title="RESTier" href="http://yourdomain.com/RESTier/feed.xml" />
+</head>
+
+
+  <body data-spy="scroll" data-target="#nav-sidebar">
+
+    <header class="site-header">
+
+  <div class="container">
+
+    <a class="site-title" href="/RESTier/">RESTier</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">1.2 Bootstrap an OData service [>=0.4.0]</h1>
+    <p class="post-meta">Oct 24, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>After RESTier 0.4.0, creating an OData service has never been easier! This subsection shows how to create an OData V4 endpoint using RESTier in a few minutes. <a href="http://msftdbprodsamples.codeplex.com/downloads/get/354847">AdventureWorksLT</a> will be used as the sample database and <a href="http://msdn.microsoft.com/en-us/data/ef.aspx">Entity Framework</a> as the data proxy.</p>
+
+<h3 id="create-a-project-and-a-web-app">Create a project and a web app</h3>
+<p>1.Open Visual Studio 2015 or Visual Studio 2013. If you use Visual Studio 2013, the screens will be slightly different from the screenshots, but the procedures are essentially the same.</p>
+
+<p>2.From the <strong>File</strong> menu, click <strong>New &gt; Project</strong>.</p>
+
+<p>3.In the <strong>New Project</strong> dialog box, click <strong>C# &gt; Web &gt; ASP.NET Web Application</strong>.</p>
+
+<p>4.Clear the <strong>Add Application Insights to Project</strong> check box.</p>
+
+<p>5.Name the application <strong>HelloWorld</strong>.</p>
+
+<p>6.Click <strong>OK</strong>.</p>
+
+<p><img src="/RESTier/images/solution.PNG" alt="" /></p>
+
+<p>7.In the <strong>New ASP.NET Project</strong> dialog box, select the <strong>Empty</strong> template.</p>
+
+<p>8.Select the <strong>Web API</strong> check box.</p>
+
+<p>9.Clear the <strong>Host in the cloud</strong> check box.</p>
+
+<p><img src="/RESTier/images/project.PNG" alt="" /></p>
+
+<h3 id="install-the-restier-packages">Install the RESTier packages</h3>
+
+<p>1.In the <strong>Solution Explorer</strong> window, right click the project <strong>HelloWorld</strong> and select <strong>Manage NuGet Packages…</strong>.</p>
+
+<p>2.In the <strong>NuGet Package Manager</strong> window, select the <strong>Include prerelease</strong> checkbox.</p>
+
+<p>3.Type <strong>Restier</strong> in the <strong>Search Box</strong> beside and press <strong>Enter</strong>.</p>
+
+<p>4.Select <strong>Microsoft.Restier</strong> and click the <strong>Install</strong> button.</p>
+
+<p><img src="/RESTier/images/nuget.PNG" alt="" /></p>
+
+<p>5.In the <strong>Preview</strong> dialog box, click the <strong>OK</strong> button.</p>
+
+<p><img src="/RESTier/images/preview.PNG" alt="" /></p>
+
+<p>6.In the <strong>License Acceptance</strong> dialog box, click the <strong>I Accept</strong> button.</p>
+
+<p><img src="/RESTier/images/license.PNG" alt="" /></p>
+
+<h3 id="generate-the-model-classes">Generate the model classes</h3>
+
+<p>1.Download <a href="http://msftdbprodsamples.codeplex.com/downloads/get/354847">AdventureWorksLT2012_Data.mdf</a> and <a href="https://msdn.microsoft.com/en-us/library/8b6y4c7s.aspx">import</a> it into the <code class="highlighter-rouge">(localdb)\MSSQLLocalDB</code> database.</p>
+
+<p>2.In the <strong>Solution Explorer</strong> window, right click the <strong>Models</strong> folder under the project <strong>HelloWorld</strong> and select <strong>Add &gt; New Item</strong>.</p>
+
+<p>3.In the <strong>Add New Item - HelloWorld</strong> dialog box, click <strong>C# &gt; Data &gt; ADO.NET Entity Data Model</strong>.</p>
+
+<p>4.Name the model <strong>AdventureWorksLT</strong>.</p>
+
+<p>5.Click the <strong>Add</strong> button.</p>
+
+<p><img src="/RESTier/images/model.PNG" alt="" /></p>
+
+<p>6.In the <strong>Entity Data Model Wizard</strong> window, select the item <strong>Code First from database</strong>.</p>
+
+<p>7.Click the <strong>Next</strong> button.</p>
+
+<p><img src="/RESTier/images/codefirst1.PNG" alt="" /></p>
+
+<p>8.Click the <strong>New Connection</strong> button.</p>
+
+<p><img src="/RESTier/images/codefirst2.PNG" alt="" /></p>
+
+<p>9.In the <strong>Connection Properties</strong> dialog box, type <strong>(localdb)\MSSQLLocalDB</strong> for <strong>Server name</strong>.</p>
+
+<p>10.Select <strong>AdventureWorksLT2012</strong> for <strong>database name</strong>.</p>
+
+<p><img src="/RESTier/images/codefirst3.PNG" alt="" /></p>
+
+<p>11.After returning to the <strong>Entity Data Model Wizard</strong> window, click the <strong>Next</strong> button.</p>
+
+<p><img src="/RESTier/images/codefirst4.PNG" alt="" /></p>
+
+<p>12.Select the <strong>Tables</strong> check box and click the <strong>Finish</strong> button.</p>
+
+<p><img src="/RESTier/images/codefirst5.PNG" alt="" /></p>
+
+<h3 id="configure-the-odata-endpoint">Configure the OData Endpoint</h3>
+<p>In the <strong>Solution Explorer</strong> window, click <strong>HelloWorld &gt; App_Start &gt; WebApiConfig.cs</strong>. Replace the <code class="highlighter-rouge">WebApiConfig</code> class the following code.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System.Web.Http</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">HelloWorld.Models</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.EntityFramework</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Restier.WebApi.Batch</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">HelloWorld</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">class</span> <span class="nc">WebApiConfig</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="n">async</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Register</span><span class="p">(</span><span class="n">HttpConfiguration</span> <span class="n">config</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">await</span> <span class="n">config</span><span class="p">.</span><span class="n">MapRestierRoute</span><span class="p">&lt;</span><span class="n">DbApi</span><span class="p">&lt;</span><span class="n">AdventureWorksLT</span><span class="p">&gt;&gt;(</span>
+                <span class="s">"AdventureWorksLT"</span><span class="p">,</span>
+                <span class="s">"api/AdventureWorksLT"</span><span class="p">,</span>
+                <span class="k">new</span> <span class="nf">RestierBatchHandler</span><span class="p">(</span><span class="n">GlobalConfiguration</span><span class="p">.</span><span class="n">DefaultServer</span><span class="p">));</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>After these steps, you will have finished bootstrapping an OData service endpoint. You can then <em>Run</em> the project and an OData service is started. Then you can start by accessing the URL <code class="highlighter-rouge">http://localhost:&lt;ISS Express port&gt;/api/AdventureWorksLT</code> to view all available entity sets, and try with other basic OData CRUD operations. For instance, you may try querying any of the entity sets using the <code class="highlighter-rouge">$select</code>, <code class="highlighter-rouge">$filter</code>, <code class="highlighter-rouge">$orderby</code>, <code class="highlighter-rouge">$top</code> or <code class="highlighter-rouge">$skip</code> query string parameters.</p>
+
+  </article>
+
+     <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'odatanetlibrariessamples'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+</div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="container">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55977038-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+    <h2 class="footer-heading">RESTier</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>RESTier</li>
+          <li><a href="mailto:odatafeedback@microsoft.com">odatafeedback@microsoft.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/odata">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">odata</span>
+            </a>
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Documentation - tutorials, guides - for RESTier.
+  The materials available on this site are licensed as set forth <a href="https://github.com/OData/odata.github.io/blob/master/License.txt">here</a>.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
